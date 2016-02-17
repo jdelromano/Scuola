@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Template10.Services.NavigationService;
 using Windows.UI.Xaml.Navigation;
+using System.Collections.ObjectModel;
 
 namespace Esame.ViewModels
 {
@@ -54,6 +55,27 @@ namespace Esame.ViewModels
         public void GotoAbout() =>
             NavigationService.Navigate(typeof(Views.SettingsPage), 2);
 
+
+        public ObservableCollection<gruppoDetail> gruppiList
+        {
+            get
+            {
+                return new ObservableCollection<gruppoDetail>(gruppoService.getList());
+            }
+        }
+
+
+        gruppoDetail m_selectedGruppo;
+        public gruppoDetail SelectedGruppo
+        {
+            get {
+                return m_selectedGruppo;
+            }
+            set {
+                m_selectedGruppo = value;
+                RaisePropertyChanged();
+            }
+        }
     }
 }
 

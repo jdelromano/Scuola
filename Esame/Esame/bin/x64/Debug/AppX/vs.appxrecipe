@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>33666f9b-f72c-4e94-a39a-68f94eff34c7</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>D80AB833FA8FE6220009C12CA37C2007B1E939E50321485FF37DAB9A01B46281</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>4CB44878DC90DAE8EDA7DBAEF6697C89A6898923768FBEC29A3F138F9FC21D06</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>33666f9b-f72c-4e94-a39a-68f94eff34c7_1.0.0.0_x64__d5fdcz9ys33wj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>33666f9b-f72c-4e94-a39a-68f94eff34c7_d5fdcz9ys33wj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>33666f9b-f72c-4e94-a39a-68f94eff34c7</RegisteredPackageID>
@@ -22,13 +22,13 @@
     <AppXManifest Include="C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-02-15T16:00:55.839</Modified>
+      <Modified>2016-02-15T20:03:22.534</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\Esame.exe">
       <PackagePath>entrypoint\Esame.exe</PackagePath>
-      <Modified>2016-02-15T16:00:54.223</Modified>
+      <Modified>2016-02-15T20:03:21.374</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\José\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
@@ -522,7 +522,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\Esame.xr.xml">
       <PackagePath>Esame.xr.xml</PackagePath>
-      <Modified>2016-02-15T16:00:53.742</Modified>
+      <Modified>2016-02-15T20:03:21.012</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -562,11 +562,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-02-15T16:00:55.413</Modified>
+      <Modified>2016-02-15T20:03:22.207</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\Core\Esame.exe">
       <PackagePath>Esame.exe</PackagePath>
-      <Modified>2016-02-15T16:00:55.836</Modified>
+      <Modified>2016-02-15T20:03:22.532</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

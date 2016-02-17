@@ -4,6 +4,7 @@
     <NuGetPackageRoot>$(UserProfile)\.nuget\packages\</NuGetPackageRoot>
   </PropertyGroup>
   <ImportGroup>
+    <Import Project="$(NuGetPackageRoot)\SQLitePCL.raw\0.8.6\build\uap10.0\SQLitePCL.raw.targets" Condition="Exists('$(NuGetPackageRoot)\SQLitePCL.raw\0.8.6\build\uap10.0\SQLitePCL.raw.targets')" />
     <Import Project="$(NuGetPackageRoot)\Template10\1.1.3\build\uap10.0\Template10.targets" Condition="Exists('$(NuGetPackageRoot)\Template10\1.1.3\build\uap10.0\Template10.targets')" />
   </ImportGroup>
 </Project>

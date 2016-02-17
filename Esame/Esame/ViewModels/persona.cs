@@ -80,6 +80,8 @@ namespace Esame.ViewModels
             }
         }
 
+        public String textPerTitolo { get { return Cognome + " " + Nome; } }
+
         public String toJson()
         {
             MemoryStream stream = new MemoryStream();

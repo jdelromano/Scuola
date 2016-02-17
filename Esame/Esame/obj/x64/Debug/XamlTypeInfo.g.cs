@@ -156,7 +156,7 @@ namespace Esame.Esame_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[81];
+            _typeNameTable = new string[83];
             _typeNameTable[0] = "Template10.Common.BootStrapper";
             _typeNameTable[1] = "Windows.UI.Xaml.Application";
             _typeNameTable[2] = "Template10.Common.StateItems";
@@ -205,41 +205,43 @@ namespace Esame.Esame_XamlTypeInfo
             _typeNameTable[45] = "Windows.UI.Xaml.Media.Brush";
             _typeNameTable[46] = "Windows.Foundation.Size";
             _typeNameTable[47] = "Esame.Views.Busy";
-            _typeNameTable[48] = "Esame.ViewModels.personaViewModel";
+            _typeNameTable[48] = "Esame.ViewModels.gruppoDetailViewModel";
             _typeNameTable[49] = "Template10.Mvvm.ViewModelBase";
             _typeNameTable[50] = "Template10.Mvvm.BindableBase";
-            _typeNameTable[51] = "Esame.ViewModels.personaDetail";
-            _typeNameTable[52] = "System.DateTime";
-            _typeNameTable[53] = "Esame.ViewModels.gruppoDetail";
-            _typeNameTable[54] = "Template10.Common.IDispatcherWrapper";
-            _typeNameTable[55] = "Template10.Common.IStateItems";
-            _typeNameTable[56] = "Microsoft.Xaml.Interactivity.Interaction";
-            _typeNameTable[57] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
-            _typeNameTable[58] = "Windows.UI.Xaml.DependencyObjectCollection";
-            _typeNameTable[59] = "Template10.Behaviors.EllipsisBehavior";
-            _typeNameTable[60] = "Template10.Behaviors.EllipsisBehavior.Visibilities";
-            _typeNameTable[61] = "Esame.Views.personaPage";
-            _typeNameTable[62] = "Windows.UI.Xaml.Controls.Page";
-            _typeNameTable[63] = "Esame.ViewModels.DetailPageViewModel";
-            _typeNameTable[64] = "Esame.Views.DetailPage";
-            _typeNameTable[65] = "Esame.ViewModels.MainPageViewModel";
-            _typeNameTable[66] = "Template10.Behaviors.TextBoxEnterKeyBehavior";
-            _typeNameTable[67] = "Microsoft.Xaml.Interactivity.ActionCollection";
-            _typeNameTable[68] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
-            _typeNameTable[69] = "Template10.Behaviors.FocusAction";
-            _typeNameTable[70] = "Microsoft.Xaml.Interactions.Core.CallMethodAction";
-            _typeNameTable[71] = "Esame.Views.MainPage";
-            _typeNameTable[72] = "Esame.ViewModels.SettingsPageViewModel";
-            _typeNameTable[73] = "Esame.ViewModels.SettingsPartViewModel";
-            _typeNameTable[74] = "Esame.ViewModels.AboutPartViewModel";
-            _typeNameTable[75] = "Template10.Behaviors.TimeoutAction";
-            _typeNameTable[76] = "Int32";
-            _typeNameTable[77] = "Esame.Views.SettingsPage";
-            _typeNameTable[78] = "Windows.UI.Xaml.Media.Animation.TransitionCollection";
-            _typeNameTable[79] = "Esame.Views.Shell";
-            _typeNameTable[80] = "Esame.Views.Splash";
+            _typeNameTable[51] = "Esame.ViewModels.gruppoDetail";
+            _typeNameTable[52] = "Template10.Common.IDispatcherWrapper";
+            _typeNameTable[53] = "Template10.Common.IStateItems";
+            _typeNameTable[54] = "Esame.Views.GruppoDetailControl";
+            _typeNameTable[55] = "Esame.ViewModels.personaViewModel";
+            _typeNameTable[56] = "Esame.ViewModels.personaDetail";
+            _typeNameTable[57] = "System.DateTime";
+            _typeNameTable[58] = "Microsoft.Xaml.Interactivity.Interaction";
+            _typeNameTable[59] = "Microsoft.Xaml.Interactivity.BehaviorCollection";
+            _typeNameTable[60] = "Windows.UI.Xaml.DependencyObjectCollection";
+            _typeNameTable[61] = "Template10.Behaviors.EllipsisBehavior";
+            _typeNameTable[62] = "Template10.Behaviors.EllipsisBehavior.Visibilities";
+            _typeNameTable[63] = "Esame.Views.personaPage";
+            _typeNameTable[64] = "Windows.UI.Xaml.Controls.Page";
+            _typeNameTable[65] = "Esame.ViewModels.DetailPageViewModel";
+            _typeNameTable[66] = "Esame.Views.DetailPage";
+            _typeNameTable[67] = "Esame.ViewModels.MainPageViewModel";
+            _typeNameTable[68] = "System.Collections.ObjectModel.ObservableCollection`1<Esame.ViewModels.gruppoDetail>";
+            _typeNameTable[69] = "System.Collections.ObjectModel.Collection`1<Esame.ViewModels.gruppoDetail>";
+            _typeNameTable[70] = "Esame.Views.MainPage";
+            _typeNameTable[71] = "Esame.ViewModels.SettingsPageViewModel";
+            _typeNameTable[72] = "Esame.ViewModels.SettingsPartViewModel";
+            _typeNameTable[73] = "Esame.ViewModels.AboutPartViewModel";
+            _typeNameTable[74] = "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior";
+            _typeNameTable[75] = "Microsoft.Xaml.Interactivity.ActionCollection";
+            _typeNameTable[76] = "Microsoft.Xaml.Interactions.Core.CallMethodAction";
+            _typeNameTable[77] = "Template10.Behaviors.TimeoutAction";
+            _typeNameTable[78] = "Int32";
+            _typeNameTable[79] = "Esame.Views.SettingsPage";
+            _typeNameTable[80] = "Windows.UI.Xaml.Media.Animation.TransitionCollection";
+            _typeNameTable[81] = "Esame.Views.Shell";
+            _typeNameTable[82] = "Esame.Views.Splash";
 
-            _typeTable = new global::System.Type[81];
+            _typeTable = new global::System.Type[83];
             _typeTable[0] = typeof(global::Template10.Common.BootStrapper);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Application);
             _typeTable[2] = typeof(global::Template10.Common.StateItems);
@@ -288,39 +290,41 @@ namespace Esame.Esame_XamlTypeInfo
             _typeTable[45] = typeof(global::Windows.UI.Xaml.Media.Brush);
             _typeTable[46] = typeof(global::Windows.Foundation.Size);
             _typeTable[47] = typeof(global::Esame.Views.Busy);
-            _typeTable[48] = typeof(global::Esame.ViewModels.personaViewModel);
+            _typeTable[48] = typeof(global::Esame.ViewModels.gruppoDetailViewModel);
             _typeTable[49] = typeof(global::Template10.Mvvm.ViewModelBase);
             _typeTable[50] = typeof(global::Template10.Mvvm.BindableBase);
-            _typeTable[51] = typeof(global::Esame.ViewModels.personaDetail);
-            _typeTable[52] = typeof(global::System.DateTime);
-            _typeTable[53] = typeof(global::Esame.ViewModels.gruppoDetail);
-            _typeTable[54] = typeof(global::Template10.Common.IDispatcherWrapper);
-            _typeTable[55] = typeof(global::Template10.Common.IStateItems);
-            _typeTable[56] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
-            _typeTable[57] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
-            _typeTable[58] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
-            _typeTable[59] = typeof(global::Template10.Behaviors.EllipsisBehavior);
-            _typeTable[60] = typeof(global::Template10.Behaviors.EllipsisBehavior.Visibilities);
-            _typeTable[61] = typeof(global::Esame.Views.personaPage);
-            _typeTable[62] = typeof(global::Windows.UI.Xaml.Controls.Page);
-            _typeTable[63] = typeof(global::Esame.ViewModels.DetailPageViewModel);
-            _typeTable[64] = typeof(global::Esame.Views.DetailPage);
-            _typeTable[65] = typeof(global::Esame.ViewModels.MainPageViewModel);
-            _typeTable[66] = typeof(global::Template10.Behaviors.TextBoxEnterKeyBehavior);
-            _typeTable[67] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
-            _typeTable[68] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
-            _typeTable[69] = typeof(global::Template10.Behaviors.FocusAction);
-            _typeTable[70] = typeof(global::Microsoft.Xaml.Interactions.Core.CallMethodAction);
-            _typeTable[71] = typeof(global::Esame.Views.MainPage);
-            _typeTable[72] = typeof(global::Esame.ViewModels.SettingsPageViewModel);
-            _typeTable[73] = typeof(global::Esame.ViewModels.SettingsPartViewModel);
-            _typeTable[74] = typeof(global::Esame.ViewModels.AboutPartViewModel);
-            _typeTable[75] = typeof(global::Template10.Behaviors.TimeoutAction);
-            _typeTable[76] = typeof(global::System.Int32);
-            _typeTable[77] = typeof(global::Esame.Views.SettingsPage);
-            _typeTable[78] = typeof(global::Windows.UI.Xaml.Media.Animation.TransitionCollection);
-            _typeTable[79] = typeof(global::Esame.Views.Shell);
-            _typeTable[80] = typeof(global::Esame.Views.Splash);
+            _typeTable[51] = typeof(global::Esame.ViewModels.gruppoDetail);
+            _typeTable[52] = typeof(global::Template10.Common.IDispatcherWrapper);
+            _typeTable[53] = typeof(global::Template10.Common.IStateItems);
+            _typeTable[54] = typeof(global::Esame.Views.GruppoDetailControl);
+            _typeTable[55] = typeof(global::Esame.ViewModels.personaViewModel);
+            _typeTable[56] = typeof(global::Esame.ViewModels.personaDetail);
+            _typeTable[57] = typeof(global::System.DateTime);
+            _typeTable[58] = typeof(global::Microsoft.Xaml.Interactivity.Interaction);
+            _typeTable[59] = typeof(global::Microsoft.Xaml.Interactivity.BehaviorCollection);
+            _typeTable[60] = typeof(global::Windows.UI.Xaml.DependencyObjectCollection);
+            _typeTable[61] = typeof(global::Template10.Behaviors.EllipsisBehavior);
+            _typeTable[62] = typeof(global::Template10.Behaviors.EllipsisBehavior.Visibilities);
+            _typeTable[63] = typeof(global::Esame.Views.personaPage);
+            _typeTable[64] = typeof(global::Windows.UI.Xaml.Controls.Page);
+            _typeTable[65] = typeof(global::Esame.ViewModels.DetailPageViewModel);
+            _typeTable[66] = typeof(global::Esame.Views.DetailPage);
+            _typeTable[67] = typeof(global::Esame.ViewModels.MainPageViewModel);
+            _typeTable[68] = typeof(global::System.Collections.ObjectModel.ObservableCollection<global::Esame.ViewModels.gruppoDetail>);
+            _typeTable[69] = typeof(global::System.Collections.ObjectModel.Collection<global::Esame.ViewModels.gruppoDetail>);
+            _typeTable[70] = typeof(global::Esame.Views.MainPage);
+            _typeTable[71] = typeof(global::Esame.ViewModels.SettingsPageViewModel);
+            _typeTable[72] = typeof(global::Esame.ViewModels.SettingsPartViewModel);
+            _typeTable[73] = typeof(global::Esame.ViewModels.AboutPartViewModel);
+            _typeTable[74] = typeof(global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior);
+            _typeTable[75] = typeof(global::Microsoft.Xaml.Interactivity.ActionCollection);
+            _typeTable[76] = typeof(global::Microsoft.Xaml.Interactions.Core.CallMethodAction);
+            _typeTable[77] = typeof(global::Template10.Behaviors.TimeoutAction);
+            _typeTable[78] = typeof(global::System.Int32);
+            _typeTable[79] = typeof(global::Esame.Views.SettingsPage);
+            _typeTable[80] = typeof(global::Windows.UI.Xaml.Media.Animation.TransitionCollection);
+            _typeTable[81] = typeof(global::Esame.Views.Shell);
+            _typeTable[82] = typeof(global::Esame.Views.Splash);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -365,27 +369,29 @@ namespace Esame.Esame_XamlTypeInfo
         private object Activate_40_PageHeader() { return new global::Template10.Controls.PageHeader(); }
         private object Activate_43_Resizer() { return new global::Template10.Controls.Resizer(); }
         private object Activate_47_Busy() { return new global::Esame.Views.Busy(); }
-        private object Activate_48_personaViewModel() { return new global::Esame.ViewModels.personaViewModel(); }
-        private object Activate_51_personaDetail() { return new global::Esame.ViewModels.personaDetail(); }
-        private object Activate_53_gruppoDetail() { return new global::Esame.ViewModels.gruppoDetail(); }
-        private object Activate_57_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
-        private object Activate_59_EllipsisBehavior() { return new global::Template10.Behaviors.EllipsisBehavior(); }
-        private object Activate_61_personaPage() { return new global::Esame.Views.personaPage(); }
-        private object Activate_63_DetailPageViewModel() { return new global::Esame.ViewModels.DetailPageViewModel(); }
-        private object Activate_64_DetailPage() { return new global::Esame.Views.DetailPage(); }
-        private object Activate_65_MainPageViewModel() { return new global::Esame.ViewModels.MainPageViewModel(); }
-        private object Activate_66_TextBoxEnterKeyBehavior() { return new global::Template10.Behaviors.TextBoxEnterKeyBehavior(); }
-        private object Activate_67_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
-        private object Activate_68_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
-        private object Activate_69_FocusAction() { return new global::Template10.Behaviors.FocusAction(); }
-        private object Activate_70_CallMethodAction() { return new global::Microsoft.Xaml.Interactions.Core.CallMethodAction(); }
-        private object Activate_71_MainPage() { return new global::Esame.Views.MainPage(); }
-        private object Activate_72_SettingsPageViewModel() { return new global::Esame.ViewModels.SettingsPageViewModel(); }
-        private object Activate_73_SettingsPartViewModel() { return new global::Esame.ViewModels.SettingsPartViewModel(); }
-        private object Activate_74_AboutPartViewModel() { return new global::Esame.ViewModels.AboutPartViewModel(); }
-        private object Activate_75_TimeoutAction() { return new global::Template10.Behaviors.TimeoutAction(); }
-        private object Activate_77_SettingsPage() { return new global::Esame.Views.SettingsPage(); }
-        private object Activate_79_Shell() { return new global::Esame.Views.Shell(); }
+        private object Activate_48_gruppoDetailViewModel() { return new global::Esame.ViewModels.gruppoDetailViewModel(); }
+        private object Activate_51_gruppoDetail() { return new global::Esame.ViewModels.gruppoDetail(); }
+        private object Activate_54_GruppoDetailControl() { return new global::Esame.Views.GruppoDetailControl(); }
+        private object Activate_55_personaViewModel() { return new global::Esame.ViewModels.personaViewModel(); }
+        private object Activate_56_personaDetail() { return new global::Esame.ViewModels.personaDetail(); }
+        private object Activate_59_BehaviorCollection() { return new global::Microsoft.Xaml.Interactivity.BehaviorCollection(); }
+        private object Activate_61_EllipsisBehavior() { return new global::Template10.Behaviors.EllipsisBehavior(); }
+        private object Activate_63_personaPage() { return new global::Esame.Views.personaPage(); }
+        private object Activate_65_DetailPageViewModel() { return new global::Esame.ViewModels.DetailPageViewModel(); }
+        private object Activate_66_DetailPage() { return new global::Esame.Views.DetailPage(); }
+        private object Activate_67_MainPageViewModel() { return new global::Esame.ViewModels.MainPageViewModel(); }
+        private object Activate_68_ObservableCollection() { return new global::System.Collections.ObjectModel.ObservableCollection<global::Esame.ViewModels.gruppoDetail>(); }
+        private object Activate_69_Collection() { return new global::System.Collections.ObjectModel.Collection<global::Esame.ViewModels.gruppoDetail>(); }
+        private object Activate_70_MainPage() { return new global::Esame.Views.MainPage(); }
+        private object Activate_71_SettingsPageViewModel() { return new global::Esame.ViewModels.SettingsPageViewModel(); }
+        private object Activate_72_SettingsPartViewModel() { return new global::Esame.ViewModels.SettingsPartViewModel(); }
+        private object Activate_73_AboutPartViewModel() { return new global::Esame.ViewModels.AboutPartViewModel(); }
+        private object Activate_74_EventTriggerBehavior() { return new global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior(); }
+        private object Activate_75_ActionCollection() { return new global::Microsoft.Xaml.Interactivity.ActionCollection(); }
+        private object Activate_76_CallMethodAction() { return new global::Microsoft.Xaml.Interactions.Core.CallMethodAction(); }
+        private object Activate_77_TimeoutAction() { return new global::Template10.Behaviors.TimeoutAction(); }
+        private object Activate_79_SettingsPage() { return new global::Esame.Views.SettingsPage(); }
+        private object Activate_81_Shell() { return new global::Esame.Views.Shell(); }
         private void MapAdd_2_StateItems(object instance, object key, object item)
         {
             var collection = (global::System.Collections.Generic.IDictionary<global::Template10.Common.StateItemKey, global::System.Object>)instance;
@@ -412,13 +418,25 @@ namespace Esame.Esame_XamlTypeInfo
             var newItem = (global::Template10.Controls.HamburgerButtonInfo)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_57_BehaviorCollection(object instance, object item)
+        private void VectorAdd_59_BehaviorCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
             collection.Add(newItem);
         }
-        private void VectorAdd_67_ActionCollection(object instance, object item)
+        private void VectorAdd_68_ObservableCollection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Esame.ViewModels.gruppoDetail>)instance;
+            var newItem = (global::Esame.ViewModels.gruppoDetail)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_69_Collection(object instance, object item)
+        {
+            var collection = (global::System.Collections.Generic.ICollection<global::Esame.ViewModels.gruppoDetail>)instance;
+            var newItem = (global::Esame.ViewModels.gruppoDetail)item;
+            collection.Add(newItem);
+        }
+        private void VectorAdd_75_ActionCollection(object instance, object item)
         {
             var collection = (global::System.Collections.Generic.ICollection<global::Windows.UI.Xaml.DependencyObject>)instance;
             var newItem = (global::Windows.UI.Xaml.DependencyObject)item;
@@ -760,15 +778,12 @@ namespace Esame.Esame_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 48:   //  Esame.ViewModels.personaViewModel
+            case 48:   //  Esame.ViewModels.gruppoDetailViewModel
                 userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_48_personaViewModel;
-                userType.AddMemberName("Value");
+                userType.Activator = Activate_48_gruppoDetailViewModel;
                 userType.AddMemberName("Nome");
-                userType.AddMemberName("Cognome");
-                userType.AddMemberName("Telefono");
-                userType.AddMemberName("Nascita");
-                userType.AddMemberName("Gruppo");
+                userType.AddMemberName("ID");
+                userType.AddMemberName("Model");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
@@ -786,64 +801,88 @@ namespace Esame.Esame_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 51:   //  Esame.ViewModels.personaDetail
+            case 51:   //  Esame.ViewModels.gruppoDetail
+                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_51_gruppoDetail;
+                userType.AddMemberName("ID");
+                userType.AddMemberName("Nome");
+                userType.AddMemberName("Responsabile");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 52:   //  Template10.Common.IDispatcherWrapper
+                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 53:   //  Template10.Common.IStateItems
+                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, null);
+                userType.SetIsReturnTypeStub();
+                xamlType = userType;
+                break;
+
+            case 54:   //  Esame.Views.GruppoDetailControl
+                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_54_GruppoDetailControl;
+                userType.AddMemberName("Gruppo");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 55:   //  Esame.ViewModels.personaViewModel
+                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
+                userType.Activator = Activate_55_personaViewModel;
+                userType.AddMemberName("Value");
+                userType.AddMemberName("Nome");
+                userType.AddMemberName("Cognome");
+                userType.AddMemberName("Telefono");
+                userType.AddMemberName("Nascita");
+                userType.AddMemberName("Gruppo");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 56:   //  Esame.ViewModels.personaDetail
                 userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.SetIsReturnTypeStub();
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 52:   //  System.DateTime
+            case 57:   //  System.DateTime
                 userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.ValueType"));
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 53:   //  Esame.ViewModels.gruppoDetail
-                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 54:   //  Template10.Common.IDispatcherWrapper
-                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 55:   //  Template10.Common.IStateItems
-                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, null);
-                userType.SetIsReturnTypeStub();
-                xamlType = userType;
-                break;
-
-            case 56:   //  Microsoft.Xaml.Interactivity.Interaction
+            case 58:   //  Microsoft.Xaml.Interactivity.Interaction
                 userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
                 userType.AddMemberName("Behaviors");
                 xamlType = userType;
                 break;
 
-            case 57:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
+            case 59:   //  Microsoft.Xaml.Interactivity.BehaviorCollection
                 userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_57_BehaviorCollection;
+                userType.CollectionAdd = VectorAdd_59_BehaviorCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 58:   //  Windows.UI.Xaml.DependencyObjectCollection
+            case 60:   //  Windows.UI.Xaml.DependencyObjectCollection
                 xamlType = new global::Esame.Esame_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 59:   //  Template10.Behaviors.EllipsisBehavior
+            case 61:   //  Template10.Behaviors.EllipsisBehavior
                 userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_59_EllipsisBehavior;
+                userType.Activator = Activate_61_EllipsisBehavior;
                 userType.AddMemberName("Visibility");
                 userType.AddMemberName("AssociatedObject");
                 xamlType = userType;
                 break;
 
-            case 60:   //  Template10.Behaviors.EllipsisBehavior.Visibilities
+            case 62:   //  Template10.Behaviors.EllipsisBehavior.Visibilities
                 userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Enum"));
                 userType.AddEnumValue("Visible", global::Template10.Behaviors.EllipsisBehavior.Visibilities.Visible);
                 userType.AddEnumValue("Collapsed", global::Template10.Behaviors.EllipsisBehavior.Visibilities.Collapsed);
@@ -851,59 +890,89 @@ namespace Esame.Esame_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 61:   //  Esame.Views.personaPage
+            case 63:   //  Esame.Views.personaPage
                 userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_61_personaPage;
+                userType.Activator = Activate_63_personaPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 62:   //  Windows.UI.Xaml.Controls.Page
+            case 64:   //  Windows.UI.Xaml.Controls.Page
                 xamlType = new global::Esame.Esame_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 63:   //  Esame.ViewModels.DetailPageViewModel
+            case 65:   //  Esame.ViewModels.DetailPageViewModel
                 userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_63_DetailPageViewModel;
+                userType.Activator = Activate_65_DetailPageViewModel;
                 userType.AddMemberName("Value");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 64:   //  Esame.Views.DetailPage
+            case 66:   //  Esame.Views.DetailPage
                 userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_64_DetailPage;
+                userType.Activator = Activate_66_DetailPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 65:   //  Esame.ViewModels.MainPageViewModel
+            case 67:   //  Esame.ViewModels.MainPageViewModel
                 userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_65_MainPageViewModel;
+                userType.Activator = Activate_67_MainPageViewModel;
                 userType.AddMemberName("Value");
+                userType.AddMemberName("gruppiList");
+                userType.AddMemberName("SelectedGruppo");
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 66:   //  Template10.Behaviors.TextBoxEnterKeyBehavior
-                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_66_TextBoxEnterKeyBehavior;
-                userType.SetContentPropertyName("Template10.Behaviors.TextBoxEnterKeyBehavior.Actions");
-                userType.AddMemberName("Actions");
-                userType.AddMemberName("AssociatedObject");
-                xamlType = userType;
-                break;
-
-            case 67:   //  Microsoft.Xaml.Interactivity.ActionCollection
-                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
-                userType.CollectionAdd = VectorAdd_67_ActionCollection;
+            case 68:   //  System.Collections.ObjectModel.ObservableCollection`1<Esame.ViewModels.gruppoDetail>
+                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("System.Collections.ObjectModel.Collection`1<Esame.ViewModels.gruppoDetail>"));
+                userType.CollectionAdd = VectorAdd_68_ObservableCollection;
                 userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 68:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
+            case 69:   //  System.Collections.ObjectModel.Collection`1<Esame.ViewModels.gruppoDetail>
+                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Object"));
+                userType.Activator = Activate_69_Collection;
+                userType.CollectionAdd = VectorAdd_69_Collection;
+                xamlType = userType;
+                break;
+
+            case 70:   //  Esame.Views.MainPage
+                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_70_MainPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 71:   //  Esame.ViewModels.SettingsPageViewModel
+                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
+                userType.Activator = Activate_71_SettingsPageViewModel;
+                userType.AddMemberName("SettingsPartViewModel");
+                userType.AddMemberName("AboutPartViewModel");
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 72:   //  Esame.ViewModels.SettingsPartViewModel
+                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 73:   //  Esame.ViewModels.AboutPartViewModel
+                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
+                userType.SetIsReturnTypeStub();
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 74:   //  Microsoft.Xaml.Interactions.Core.EventTriggerBehavior
                 userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_68_EventTriggerBehavior;
+                userType.Activator = Activate_74_EventTriggerBehavior;
                 userType.SetContentPropertyName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions");
                 userType.AddMemberName("Actions");
                 userType.AddMemberName("EventName");
@@ -912,82 +981,53 @@ namespace Esame.Esame_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 69:   //  Template10.Behaviors.FocusAction
-                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_69_FocusAction;
+            case 75:   //  Microsoft.Xaml.Interactivity.ActionCollection
+                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObjectCollection"));
+                userType.CollectionAdd = VectorAdd_75_ActionCollection;
+                userType.SetIsReturnTypeStub();
                 xamlType = userType;
                 break;
 
-            case 70:   //  Microsoft.Xaml.Interactions.Core.CallMethodAction
+            case 76:   //  Microsoft.Xaml.Interactions.Core.CallMethodAction
                 userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_70_CallMethodAction;
+                userType.Activator = Activate_76_CallMethodAction;
                 userType.AddMemberName("MethodName");
                 userType.AddMemberName("TargetObject");
                 xamlType = userType;
                 break;
 
-            case 71:   //  Esame.Views.MainPage
-                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_71_MainPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 72:   //  Esame.ViewModels.SettingsPageViewModel
-                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.Activator = Activate_72_SettingsPageViewModel;
-                userType.AddMemberName("SettingsPartViewModel");
-                userType.AddMemberName("AboutPartViewModel");
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 73:   //  Esame.ViewModels.SettingsPartViewModel
-                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 74:   //  Esame.ViewModels.AboutPartViewModel
-                userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Template10.Mvvm.ViewModelBase"));
-                userType.SetIsReturnTypeStub();
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 75:   //  Template10.Behaviors.TimeoutAction
+            case 77:   //  Template10.Behaviors.TimeoutAction
                 userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.DependencyObject"));
-                userType.Activator = Activate_75_TimeoutAction;
+                userType.Activator = Activate_77_TimeoutAction;
                 userType.SetContentPropertyName("Template10.Behaviors.TimeoutAction.Actions");
                 userType.AddMemberName("Actions");
                 userType.AddMemberName("Milliseconds");
                 xamlType = userType;
                 break;
 
-            case 76:   //  Int32
+            case 78:   //  Int32
                 xamlType = new global::Esame.Esame_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 77:   //  Esame.Views.SettingsPage
+            case 79:   //  Esame.Views.SettingsPage
                 userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_77_SettingsPage;
+                userType.Activator = Activate_79_SettingsPage;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 78:   //  Windows.UI.Xaml.Media.Animation.TransitionCollection
+            case 80:   //  Windows.UI.Xaml.Media.Animation.TransitionCollection
                 xamlType = new global::Esame.Esame_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 79:   //  Esame.Views.Shell
+            case 81:   //  Esame.Views.Shell
                 userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_79_Shell;
+                userType.Activator = Activate_81_Shell;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;
 
-            case 80:   //  Esame.Views.Splash
+            case 82:   //  Esame.Views.Splash
                 userType = new global::Esame.Esame_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.SetIsLocalType();
                 xamlType = userType;
@@ -1686,280 +1726,355 @@ namespace Esame.Esame_XamlTypeInfo
             var that = (global::Esame.Views.Busy)instance;
             that.IsBusy = (global::System.Boolean)Value;
         }
-        private object get_67_personaViewModel_Value(object instance)
+        private object get_67_gruppoDetailViewModel_Nome(object instance)
         {
-            var that = (global::Esame.ViewModels.personaViewModel)instance;
-            return that.Value;
-        }
-        private void set_67_personaViewModel_Value(object instance, object Value)
-        {
-            var that = (global::Esame.ViewModels.personaViewModel)instance;
-            that.Value = (global::Esame.ViewModels.personaDetail)Value;
-        }
-        private object get_68_personaViewModel_Nome(object instance)
-        {
-            var that = (global::Esame.ViewModels.personaViewModel)instance;
+            var that = (global::Esame.ViewModels.gruppoDetailViewModel)instance;
             return that.Nome;
         }
-        private void set_68_personaViewModel_Nome(object instance, object Value)
+        private void set_67_gruppoDetailViewModel_Nome(object instance, object Value)
         {
-            var that = (global::Esame.ViewModels.personaViewModel)instance;
+            var that = (global::Esame.ViewModels.gruppoDetailViewModel)instance;
             that.Nome = (global::System.String)Value;
         }
-        private object get_69_personaViewModel_Cognome(object instance)
+        private object get_68_gruppoDetailViewModel_ID(object instance)
         {
-            var that = (global::Esame.ViewModels.personaViewModel)instance;
-            return that.Cognome;
+            var that = (global::Esame.ViewModels.gruppoDetailViewModel)instance;
+            return that.ID;
         }
-        private void set_69_personaViewModel_Cognome(object instance, object Value)
+        private void set_68_gruppoDetailViewModel_ID(object instance, object Value)
         {
-            var that = (global::Esame.ViewModels.personaViewModel)instance;
-            that.Cognome = (global::System.String)Value;
+            var that = (global::Esame.ViewModels.gruppoDetailViewModel)instance;
+            that.ID = (global::System.String)Value;
         }
-        private object get_70_personaViewModel_Telefono(object instance)
+        private object get_69_gruppoDetailViewModel_Model(object instance)
         {
-            var that = (global::Esame.ViewModels.personaViewModel)instance;
-            return that.Telefono;
+            var that = (global::Esame.ViewModels.gruppoDetailViewModel)instance;
+            return that.Model;
         }
-        private void set_70_personaViewModel_Telefono(object instance, object Value)
+        private void set_69_gruppoDetailViewModel_Model(object instance, object Value)
         {
-            var that = (global::Esame.ViewModels.personaViewModel)instance;
-            that.Telefono = (global::System.String)Value;
+            var that = (global::Esame.ViewModels.gruppoDetailViewModel)instance;
+            that.Model = (global::Esame.ViewModels.gruppoDetail)Value;
         }
-        private object get_71_personaViewModel_Nascita(object instance)
-        {
-            var that = (global::Esame.ViewModels.personaViewModel)instance;
-            return that.Nascita;
-        }
-        private void set_71_personaViewModel_Nascita(object instance, object Value)
-        {
-            var that = (global::Esame.ViewModels.personaViewModel)instance;
-            that.Nascita = (global::System.DateTime)Value;
-        }
-        private object get_72_personaViewModel_Gruppo(object instance)
-        {
-            var that = (global::Esame.ViewModels.personaViewModel)instance;
-            return that.Gruppo;
-        }
-        private void set_72_personaViewModel_Gruppo(object instance, object Value)
-        {
-            var that = (global::Esame.ViewModels.personaViewModel)instance;
-            that.Gruppo = (global::Esame.ViewModels.gruppoDetail)Value;
-        }
-        private object get_73_ViewModelBase_NavigationService(object instance)
+        private object get_70_ViewModelBase_NavigationService(object instance)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             return that.NavigationService;
         }
-        private void set_73_ViewModelBase_NavigationService(object instance, object Value)
+        private void set_70_ViewModelBase_NavigationService(object instance, object Value)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             that.NavigationService = (global::Template10.Services.NavigationService.INavigationService)Value;
         }
-        private object get_74_ViewModelBase_Dispatcher(object instance)
+        private object get_71_ViewModelBase_Dispatcher(object instance)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             return that.Dispatcher;
         }
-        private void set_74_ViewModelBase_Dispatcher(object instance, object Value)
+        private void set_71_ViewModelBase_Dispatcher(object instance, object Value)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             that.Dispatcher = (global::Template10.Common.IDispatcherWrapper)Value;
         }
-        private object get_75_ViewModelBase_SessionState(object instance)
+        private object get_72_ViewModelBase_SessionState(object instance)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             return that.SessionState;
         }
-        private void set_75_ViewModelBase_SessionState(object instance, object Value)
+        private void set_72_ViewModelBase_SessionState(object instance, object Value)
         {
             var that = (global::Template10.Mvvm.ViewModelBase)instance;
             that.SessionState = (global::Template10.Common.IStateItems)Value;
         }
-        private object get_76_Interaction_Behaviors(object instance)
+        private object get_73_GruppoDetailControl_Gruppo(object instance)
+        {
+            var that = (global::Esame.Views.GruppoDetailControl)instance;
+            return that.Gruppo;
+        }
+        private void set_73_GruppoDetailControl_Gruppo(object instance, object Value)
+        {
+            var that = (global::Esame.Views.GruppoDetailControl)instance;
+            that.Gruppo = (global::Esame.ViewModels.gruppoDetail)Value;
+        }
+        private object get_74_personaViewModel_Value(object instance)
+        {
+            var that = (global::Esame.ViewModels.personaViewModel)instance;
+            return that.Value;
+        }
+        private void set_74_personaViewModel_Value(object instance, object Value)
+        {
+            var that = (global::Esame.ViewModels.personaViewModel)instance;
+            that.Value = (global::Esame.ViewModels.personaDetail)Value;
+        }
+        private object get_75_personaViewModel_Nome(object instance)
+        {
+            var that = (global::Esame.ViewModels.personaViewModel)instance;
+            return that.Nome;
+        }
+        private void set_75_personaViewModel_Nome(object instance, object Value)
+        {
+            var that = (global::Esame.ViewModels.personaViewModel)instance;
+            that.Nome = (global::System.String)Value;
+        }
+        private object get_76_personaViewModel_Cognome(object instance)
+        {
+            var that = (global::Esame.ViewModels.personaViewModel)instance;
+            return that.Cognome;
+        }
+        private void set_76_personaViewModel_Cognome(object instance, object Value)
+        {
+            var that = (global::Esame.ViewModels.personaViewModel)instance;
+            that.Cognome = (global::System.String)Value;
+        }
+        private object get_77_personaViewModel_Telefono(object instance)
+        {
+            var that = (global::Esame.ViewModels.personaViewModel)instance;
+            return that.Telefono;
+        }
+        private void set_77_personaViewModel_Telefono(object instance, object Value)
+        {
+            var that = (global::Esame.ViewModels.personaViewModel)instance;
+            that.Telefono = (global::System.String)Value;
+        }
+        private object get_78_personaViewModel_Nascita(object instance)
+        {
+            var that = (global::Esame.ViewModels.personaViewModel)instance;
+            return that.Nascita;
+        }
+        private void set_78_personaViewModel_Nascita(object instance, object Value)
+        {
+            var that = (global::Esame.ViewModels.personaViewModel)instance;
+            that.Nascita = (global::System.DateTime)Value;
+        }
+        private object get_79_personaViewModel_Gruppo(object instance)
+        {
+            var that = (global::Esame.ViewModels.personaViewModel)instance;
+            return that.Gruppo;
+        }
+        private void set_79_personaViewModel_Gruppo(object instance, object Value)
+        {
+            var that = (global::Esame.ViewModels.personaViewModel)instance;
+            that.Gruppo = (global::Esame.ViewModels.gruppoDetail)Value;
+        }
+        private object get_80_Interaction_Behaviors(object instance)
         {
             return global::Microsoft.Xaml.Interactivity.Interaction.GetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance);
         }
-        private void set_76_Interaction_Behaviors(object instance, object Value)
+        private void set_80_Interaction_Behaviors(object instance, object Value)
         {
             global::Microsoft.Xaml.Interactivity.Interaction.SetBehaviors((global::Windows.UI.Xaml.DependencyObject)instance, (global::Microsoft.Xaml.Interactivity.BehaviorCollection)Value);
         }
-        private object get_77_EllipsisBehavior_Visibility(object instance)
+        private object get_81_EllipsisBehavior_Visibility(object instance)
         {
             var that = (global::Template10.Behaviors.EllipsisBehavior)instance;
             return that.Visibility;
         }
-        private void set_77_EllipsisBehavior_Visibility(object instance, object Value)
+        private void set_81_EllipsisBehavior_Visibility(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.EllipsisBehavior)instance;
             that.Visibility = (global::Template10.Behaviors.EllipsisBehavior.Visibilities)Value;
         }
-        private object get_78_EllipsisBehavior_AssociatedObject(object instance)
+        private object get_82_EllipsisBehavior_AssociatedObject(object instance)
         {
             var that = (global::Template10.Behaviors.EllipsisBehavior)instance;
             return that.AssociatedObject;
         }
-        private object get_79_DetailPageViewModel_Value(object instance)
+        private object get_83_DetailPageViewModel_Value(object instance)
         {
             var that = (global::Esame.ViewModels.DetailPageViewModel)instance;
             return that.Value;
         }
-        private void set_79_DetailPageViewModel_Value(object instance, object Value)
+        private void set_83_DetailPageViewModel_Value(object instance, object Value)
         {
             var that = (global::Esame.ViewModels.DetailPageViewModel)instance;
             that.Value = (global::System.String)Value;
         }
-        private object get_80_MainPageViewModel_Value(object instance)
+        private object get_84_MainPageViewModel_Value(object instance)
         {
             var that = (global::Esame.ViewModels.MainPageViewModel)instance;
             return that.Value;
         }
-        private void set_80_MainPageViewModel_Value(object instance, object Value)
+        private void set_84_MainPageViewModel_Value(object instance, object Value)
         {
             var that = (global::Esame.ViewModels.MainPageViewModel)instance;
             that.Value = (global::System.String)Value;
         }
-        private object get_81_TextBoxEnterKeyBehavior_Actions(object instance)
+        private object get_85_MainPageViewModel_gruppiList(object instance)
         {
-            var that = (global::Template10.Behaviors.TextBoxEnterKeyBehavior)instance;
-            return that.Actions;
+            var that = (global::Esame.ViewModels.MainPageViewModel)instance;
+            return that.gruppiList;
         }
-        private object get_82_TextBoxEnterKeyBehavior_AssociatedObject(object instance)
+        private object get_86_gruppoDetail_ID(object instance)
         {
-            var that = (global::Template10.Behaviors.TextBoxEnterKeyBehavior)instance;
-            return that.AssociatedObject;
+            var that = (global::Esame.ViewModels.gruppoDetail)instance;
+            return that.ID;
         }
-        private object get_83_EventTriggerBehavior_Actions(object instance)
+        private void set_86_gruppoDetail_ID(object instance, object Value)
         {
-            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
-            return that.Actions;
+            var that = (global::Esame.ViewModels.gruppoDetail)instance;
+            that.ID = (global::System.String)Value;
         }
-        private object get_84_EventTriggerBehavior_EventName(object instance)
+        private object get_87_gruppoDetail_Nome(object instance)
         {
-            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
-            return that.EventName;
+            var that = (global::Esame.ViewModels.gruppoDetail)instance;
+            return that.Nome;
         }
-        private void set_84_EventTriggerBehavior_EventName(object instance, object Value)
+        private void set_87_gruppoDetail_Nome(object instance, object Value)
         {
-            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
-            that.EventName = (global::System.String)Value;
+            var that = (global::Esame.ViewModels.gruppoDetail)instance;
+            that.Nome = (global::System.String)Value;
         }
-        private object get_85_EventTriggerBehavior_SourceObject(object instance)
+        private object get_88_gruppoDetail_Responsabile(object instance)
         {
-            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
-            return that.SourceObject;
+            var that = (global::Esame.ViewModels.gruppoDetail)instance;
+            return that.Responsabile;
         }
-        private void set_85_EventTriggerBehavior_SourceObject(object instance, object Value)
+        private void set_88_gruppoDetail_Responsabile(object instance, object Value)
         {
-            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
-            that.SourceObject = (global::System.Object)Value;
+            var that = (global::Esame.ViewModels.gruppoDetail)instance;
+            that.Responsabile = (global::Esame.ViewModels.personaDetail)Value;
         }
-        private object get_86_EventTriggerBehavior_AssociatedObject(object instance)
+        private object get_89_MainPageViewModel_SelectedGruppo(object instance)
         {
-            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
-            return that.AssociatedObject;
+            var that = (global::Esame.ViewModels.MainPageViewModel)instance;
+            return that.SelectedGruppo;
         }
-        private object get_87_CallMethodAction_MethodName(object instance)
+        private void set_89_MainPageViewModel_SelectedGruppo(object instance, object Value)
         {
-            var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
-            return that.MethodName;
+            var that = (global::Esame.ViewModels.MainPageViewModel)instance;
+            that.SelectedGruppo = (global::Esame.ViewModels.gruppoDetail)Value;
         }
-        private void set_87_CallMethodAction_MethodName(object instance, object Value)
-        {
-            var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
-            that.MethodName = (global::System.String)Value;
-        }
-        private object get_88_CallMethodAction_TargetObject(object instance)
-        {
-            var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
-            return that.TargetObject;
-        }
-        private void set_88_CallMethodAction_TargetObject(object instance, object Value)
-        {
-            var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
-            that.TargetObject = (global::System.Object)Value;
-        }
-        private object get_89_SettingsPageViewModel_SettingsPartViewModel(object instance)
+        private object get_90_SettingsPageViewModel_SettingsPartViewModel(object instance)
         {
             var that = (global::Esame.ViewModels.SettingsPageViewModel)instance;
             return that.SettingsPartViewModel;
         }
-        private object get_90_SettingsPageViewModel_AboutPartViewModel(object instance)
+        private object get_91_SettingsPageViewModel_AboutPartViewModel(object instance)
         {
             var that = (global::Esame.ViewModels.SettingsPageViewModel)instance;
             return that.AboutPartViewModel;
         }
-        private object get_91_TimeoutAction_Actions(object instance)
+        private object get_92_EventTriggerBehavior_Actions(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            return that.Actions;
+        }
+        private object get_93_EventTriggerBehavior_EventName(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            return that.EventName;
+        }
+        private void set_93_EventTriggerBehavior_EventName(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            that.EventName = (global::System.String)Value;
+        }
+        private object get_94_EventTriggerBehavior_SourceObject(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            return that.SourceObject;
+        }
+        private void set_94_EventTriggerBehavior_SourceObject(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            that.SourceObject = (global::System.Object)Value;
+        }
+        private object get_95_EventTriggerBehavior_AssociatedObject(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.EventTriggerBehavior)instance;
+            return that.AssociatedObject;
+        }
+        private object get_96_CallMethodAction_MethodName(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
+            return that.MethodName;
+        }
+        private void set_96_CallMethodAction_MethodName(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
+            that.MethodName = (global::System.String)Value;
+        }
+        private object get_97_CallMethodAction_TargetObject(object instance)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
+            return that.TargetObject;
+        }
+        private void set_97_CallMethodAction_TargetObject(object instance, object Value)
+        {
+            var that = (global::Microsoft.Xaml.Interactions.Core.CallMethodAction)instance;
+            that.TargetObject = (global::System.Object)Value;
+        }
+        private object get_98_TimeoutAction_Actions(object instance)
         {
             var that = (global::Template10.Behaviors.TimeoutAction)instance;
             return that.Actions;
         }
-        private object get_92_TimeoutAction_Milliseconds(object instance)
+        private object get_99_TimeoutAction_Milliseconds(object instance)
         {
             var that = (global::Template10.Behaviors.TimeoutAction)instance;
             return that.Milliseconds;
         }
-        private void set_92_TimeoutAction_Milliseconds(object instance, object Value)
+        private void set_99_TimeoutAction_Milliseconds(object instance, object Value)
         {
             var that = (global::Template10.Behaviors.TimeoutAction)instance;
             that.Milliseconds = (global::System.Int32)Value;
         }
-        private object get_93_ModalDialog_CanBackButtonDismiss(object instance)
+        private object get_100_ModalDialog_CanBackButtonDismiss(object instance)
         {
             var that = (global::Template10.Controls.ModalDialog)instance;
             return that.CanBackButtonDismiss;
         }
-        private void set_93_ModalDialog_CanBackButtonDismiss(object instance, object Value)
+        private void set_100_ModalDialog_CanBackButtonDismiss(object instance, object Value)
         {
             var that = (global::Template10.Controls.ModalDialog)instance;
             that.CanBackButtonDismiss = (global::System.Boolean)Value;
         }
-        private object get_94_ModalDialog_DisableBackButtonWhenModal(object instance)
+        private object get_101_ModalDialog_DisableBackButtonWhenModal(object instance)
         {
             var that = (global::Template10.Controls.ModalDialog)instance;
             return that.DisableBackButtonWhenModal;
         }
-        private void set_94_ModalDialog_DisableBackButtonWhenModal(object instance, object Value)
+        private void set_101_ModalDialog_DisableBackButtonWhenModal(object instance, object Value)
         {
             var that = (global::Template10.Controls.ModalDialog)instance;
             that.DisableBackButtonWhenModal = (global::System.Boolean)Value;
         }
-        private object get_95_ModalDialog_ModalContent(object instance)
+        private object get_102_ModalDialog_ModalContent(object instance)
         {
             var that = (global::Template10.Controls.ModalDialog)instance;
             return that.ModalContent;
         }
-        private void set_95_ModalDialog_ModalContent(object instance, object Value)
+        private void set_102_ModalDialog_ModalContent(object instance, object Value)
         {
             var that = (global::Template10.Controls.ModalDialog)instance;
             that.ModalContent = (global::Windows.UI.Xaml.UIElement)Value;
         }
-        private object get_96_ModalDialog_IsModal(object instance)
+        private object get_103_ModalDialog_IsModal(object instance)
         {
             var that = (global::Template10.Controls.ModalDialog)instance;
             return that.IsModal;
         }
-        private void set_96_ModalDialog_IsModal(object instance, object Value)
+        private void set_103_ModalDialog_IsModal(object instance, object Value)
         {
             var that = (global::Template10.Controls.ModalDialog)instance;
             that.IsModal = (global::System.Boolean)Value;
         }
-        private object get_97_ModalDialog_ModalBackground(object instance)
+        private object get_104_ModalDialog_ModalBackground(object instance)
         {
             var that = (global::Template10.Controls.ModalDialog)instance;
             return that.ModalBackground;
         }
-        private void set_97_ModalDialog_ModalBackground(object instance, object Value)
+        private void set_104_ModalDialog_ModalBackground(object instance, object Value)
         {
             var that = (global::Template10.Controls.ModalDialog)instance;
             that.ModalBackground = (global::Windows.UI.Xaml.Media.Brush)Value;
         }
-        private object get_98_ModalDialog_ModalTransitions(object instance)
+        private object get_105_ModalDialog_ModalTransitions(object instance)
         {
             var that = (global::Template10.Controls.ModalDialog)instance;
             return that.ModalTransitions;
         }
-        private void set_98_ModalDialog_ModalTransitions(object instance, object Value)
+        private void set_105_ModalDialog_ModalTransitions(object instance, object Value)
         {
             var that = (global::Template10.Controls.ModalDialog)instance;
             that.ModalTransitions = (global::Windows.UI.Xaml.Media.Animation.TransitionCollection)Value;
@@ -2413,214 +2528,256 @@ namespace Esame.Esame_XamlTypeInfo
                 xamlMember.Getter = get_66_Busy_IsBusy;
                 xamlMember.Setter = set_66_Busy_IsBusy;
                 break;
-            case "Esame.ViewModels.personaViewModel.Value":
-                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.personaViewModel");
-                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Value", "Esame.ViewModels.personaDetail");
-                xamlMember.Getter = get_67_personaViewModel_Value;
-                xamlMember.Setter = set_67_personaViewModel_Value;
-                break;
-            case "Esame.ViewModels.personaViewModel.Nome":
-                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.personaViewModel");
+            case "Esame.ViewModels.gruppoDetailViewModel.Nome":
+                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.gruppoDetailViewModel");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Nome", "String");
-                xamlMember.Getter = get_68_personaViewModel_Nome;
-                xamlMember.Setter = set_68_personaViewModel_Nome;
+                xamlMember.Getter = get_67_gruppoDetailViewModel_Nome;
+                xamlMember.Setter = set_67_gruppoDetailViewModel_Nome;
                 break;
-            case "Esame.ViewModels.personaViewModel.Cognome":
-                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.personaViewModel");
-                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Cognome", "String");
-                xamlMember.Getter = get_69_personaViewModel_Cognome;
-                xamlMember.Setter = set_69_personaViewModel_Cognome;
+            case "Esame.ViewModels.gruppoDetailViewModel.ID":
+                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.gruppoDetailViewModel");
+                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "ID", "String");
+                xamlMember.Getter = get_68_gruppoDetailViewModel_ID;
+                xamlMember.Setter = set_68_gruppoDetailViewModel_ID;
                 break;
-            case "Esame.ViewModels.personaViewModel.Telefono":
-                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.personaViewModel");
-                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Telefono", "String");
-                xamlMember.Getter = get_70_personaViewModel_Telefono;
-                xamlMember.Setter = set_70_personaViewModel_Telefono;
-                break;
-            case "Esame.ViewModels.personaViewModel.Nascita":
-                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.personaViewModel");
-                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Nascita", "System.DateTime");
-                xamlMember.Getter = get_71_personaViewModel_Nascita;
-                xamlMember.Setter = set_71_personaViewModel_Nascita;
-                break;
-            case "Esame.ViewModels.personaViewModel.Gruppo":
-                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.personaViewModel");
-                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Gruppo", "Esame.ViewModels.gruppoDetail");
-                xamlMember.Getter = get_72_personaViewModel_Gruppo;
-                xamlMember.Setter = set_72_personaViewModel_Gruppo;
+            case "Esame.ViewModels.gruppoDetailViewModel.Model":
+                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.gruppoDetailViewModel");
+                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Model", "Esame.ViewModels.gruppoDetail");
+                xamlMember.Getter = get_69_gruppoDetailViewModel_Model;
+                xamlMember.Setter = set_69_gruppoDetailViewModel_Model;
                 break;
             case "Template10.Mvvm.ViewModelBase.NavigationService":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "NavigationService", "Template10.Services.NavigationService.INavigationService");
-                xamlMember.Getter = get_73_ViewModelBase_NavigationService;
-                xamlMember.Setter = set_73_ViewModelBase_NavigationService;
+                xamlMember.Getter = get_70_ViewModelBase_NavigationService;
+                xamlMember.Setter = set_70_ViewModelBase_NavigationService;
                 break;
             case "Template10.Mvvm.ViewModelBase.Dispatcher":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Dispatcher", "Template10.Common.IDispatcherWrapper");
-                xamlMember.Getter = get_74_ViewModelBase_Dispatcher;
-                xamlMember.Setter = set_74_ViewModelBase_Dispatcher;
+                xamlMember.Getter = get_71_ViewModelBase_Dispatcher;
+                xamlMember.Setter = set_71_ViewModelBase_Dispatcher;
                 break;
             case "Template10.Mvvm.ViewModelBase.SessionState":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Mvvm.ViewModelBase");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "SessionState", "Template10.Common.IStateItems");
-                xamlMember.Getter = get_75_ViewModelBase_SessionState;
-                xamlMember.Setter = set_75_ViewModelBase_SessionState;
+                xamlMember.Getter = get_72_ViewModelBase_SessionState;
+                xamlMember.Setter = set_72_ViewModelBase_SessionState;
+                break;
+            case "Esame.Views.GruppoDetailControl.Gruppo":
+                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.Views.GruppoDetailControl");
+                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Gruppo", "Esame.ViewModels.gruppoDetail");
+                xamlMember.SetIsDependencyProperty();
+                xamlMember.Getter = get_73_GruppoDetailControl_Gruppo;
+                xamlMember.Setter = set_73_GruppoDetailControl_Gruppo;
+                break;
+            case "Esame.ViewModels.personaViewModel.Value":
+                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.personaViewModel");
+                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Value", "Esame.ViewModels.personaDetail");
+                xamlMember.Getter = get_74_personaViewModel_Value;
+                xamlMember.Setter = set_74_personaViewModel_Value;
+                break;
+            case "Esame.ViewModels.personaViewModel.Nome":
+                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.personaViewModel");
+                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Nome", "String");
+                xamlMember.Getter = get_75_personaViewModel_Nome;
+                xamlMember.Setter = set_75_personaViewModel_Nome;
+                break;
+            case "Esame.ViewModels.personaViewModel.Cognome":
+                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.personaViewModel");
+                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Cognome", "String");
+                xamlMember.Getter = get_76_personaViewModel_Cognome;
+                xamlMember.Setter = set_76_personaViewModel_Cognome;
+                break;
+            case "Esame.ViewModels.personaViewModel.Telefono":
+                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.personaViewModel");
+                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Telefono", "String");
+                xamlMember.Getter = get_77_personaViewModel_Telefono;
+                xamlMember.Setter = set_77_personaViewModel_Telefono;
+                break;
+            case "Esame.ViewModels.personaViewModel.Nascita":
+                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.personaViewModel");
+                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Nascita", "System.DateTime");
+                xamlMember.Getter = get_78_personaViewModel_Nascita;
+                xamlMember.Setter = set_78_personaViewModel_Nascita;
+                break;
+            case "Esame.ViewModels.personaViewModel.Gruppo":
+                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.personaViewModel");
+                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Gruppo", "Esame.ViewModels.gruppoDetail");
+                xamlMember.Getter = get_79_personaViewModel_Gruppo;
+                xamlMember.Setter = set_79_personaViewModel_Gruppo;
                 break;
             case "Microsoft.Xaml.Interactivity.Interaction.Behaviors":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactivity.Interaction");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Behaviors", "Microsoft.Xaml.Interactivity.BehaviorCollection");
                 xamlMember.SetTargetTypeName("Windows.UI.Xaml.DependencyObject");
                 xamlMember.SetIsAttachable();
-                xamlMember.Getter = get_76_Interaction_Behaviors;
-                xamlMember.Setter = set_76_Interaction_Behaviors;
+                xamlMember.Getter = get_80_Interaction_Behaviors;
+                xamlMember.Setter = set_80_Interaction_Behaviors;
                 break;
             case "Template10.Behaviors.EllipsisBehavior.Visibility":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.EllipsisBehavior");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Visibility", "Template10.Behaviors.EllipsisBehavior.Visibilities");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_77_EllipsisBehavior_Visibility;
-                xamlMember.Setter = set_77_EllipsisBehavior_Visibility;
+                xamlMember.Getter = get_81_EllipsisBehavior_Visibility;
+                xamlMember.Setter = set_81_EllipsisBehavior_Visibility;
                 break;
             case "Template10.Behaviors.EllipsisBehavior.AssociatedObject":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.EllipsisBehavior");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_78_EllipsisBehavior_AssociatedObject;
+                xamlMember.Getter = get_82_EllipsisBehavior_AssociatedObject;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Esame.ViewModels.DetailPageViewModel.Value":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.DetailPageViewModel");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Value", "String");
-                xamlMember.Getter = get_79_DetailPageViewModel_Value;
-                xamlMember.Setter = set_79_DetailPageViewModel_Value;
+                xamlMember.Getter = get_83_DetailPageViewModel_Value;
+                xamlMember.Setter = set_83_DetailPageViewModel_Value;
                 break;
             case "Esame.ViewModels.MainPageViewModel.Value":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.MainPageViewModel");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Value", "String");
-                xamlMember.Getter = get_80_MainPageViewModel_Value;
-                xamlMember.Setter = set_80_MainPageViewModel_Value;
+                xamlMember.Getter = get_84_MainPageViewModel_Value;
+                xamlMember.Setter = set_84_MainPageViewModel_Value;
                 break;
-            case "Template10.Behaviors.TextBoxEnterKeyBehavior.Actions":
-                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.TextBoxEnterKeyBehavior");
-                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
-                xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_81_TextBoxEnterKeyBehavior_Actions;
+            case "Esame.ViewModels.MainPageViewModel.gruppiList":
+                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.MainPageViewModel");
+                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "gruppiList", "System.Collections.ObjectModel.ObservableCollection`1<Esame.ViewModels.gruppoDetail>");
+                xamlMember.Getter = get_85_MainPageViewModel_gruppiList;
                 xamlMember.SetIsReadOnly();
                 break;
-            case "Template10.Behaviors.TextBoxEnterKeyBehavior.AssociatedObject":
-                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.TextBoxEnterKeyBehavior");
-                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_82_TextBoxEnterKeyBehavior_AssociatedObject;
+            case "Esame.ViewModels.gruppoDetail.ID":
+                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.gruppoDetail");
+                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "ID", "String");
+                xamlMember.Getter = get_86_gruppoDetail_ID;
+                xamlMember.Setter = set_86_gruppoDetail_ID;
+                break;
+            case "Esame.ViewModels.gruppoDetail.Nome":
+                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.gruppoDetail");
+                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Nome", "String");
+                xamlMember.Getter = get_87_gruppoDetail_Nome;
+                xamlMember.Setter = set_87_gruppoDetail_Nome;
+                break;
+            case "Esame.ViewModels.gruppoDetail.Responsabile":
+                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.gruppoDetail");
+                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Responsabile", "Esame.ViewModels.personaDetail");
+                xamlMember.Getter = get_88_gruppoDetail_Responsabile;
+                xamlMember.Setter = set_88_gruppoDetail_Responsabile;
+                break;
+            case "Esame.ViewModels.MainPageViewModel.SelectedGruppo":
+                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.MainPageViewModel");
+                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "SelectedGruppo", "Esame.ViewModels.gruppoDetail");
+                xamlMember.Getter = get_89_MainPageViewModel_SelectedGruppo;
+                xamlMember.Setter = set_89_MainPageViewModel_SelectedGruppo;
+                break;
+            case "Esame.ViewModels.SettingsPageViewModel.SettingsPartViewModel":
+                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.SettingsPageViewModel");
+                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "SettingsPartViewModel", "Esame.ViewModels.SettingsPartViewModel");
+                xamlMember.Getter = get_90_SettingsPageViewModel_SettingsPartViewModel;
+                xamlMember.SetIsReadOnly();
+                break;
+            case "Esame.ViewModels.SettingsPageViewModel.AboutPartViewModel":
+                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.SettingsPageViewModel");
+                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "AboutPartViewModel", "Esame.ViewModels.AboutPartViewModel");
+                xamlMember.Getter = get_91_SettingsPageViewModel_AboutPartViewModel;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.Actions":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_83_EventTriggerBehavior_Actions;
+                xamlMember.Getter = get_92_EventTriggerBehavior_Actions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.EventName":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "EventName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_84_EventTriggerBehavior_EventName;
-                xamlMember.Setter = set_84_EventTriggerBehavior_EventName;
+                xamlMember.Getter = get_93_EventTriggerBehavior_EventName;
+                xamlMember.Setter = set_93_EventTriggerBehavior_EventName;
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.SourceObject":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "SourceObject", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_85_EventTriggerBehavior_SourceObject;
-                xamlMember.Setter = set_85_EventTriggerBehavior_SourceObject;
+                xamlMember.Getter = get_94_EventTriggerBehavior_SourceObject;
+                xamlMember.Setter = set_94_EventTriggerBehavior_SourceObject;
                 break;
             case "Microsoft.Xaml.Interactions.Core.EventTriggerBehavior.AssociatedObject":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.EventTriggerBehavior");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "AssociatedObject", "Windows.UI.Xaml.DependencyObject");
-                xamlMember.Getter = get_86_EventTriggerBehavior_AssociatedObject;
+                xamlMember.Getter = get_95_EventTriggerBehavior_AssociatedObject;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Microsoft.Xaml.Interactions.Core.CallMethodAction.MethodName":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.CallMethodAction");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "MethodName", "String");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_87_CallMethodAction_MethodName;
-                xamlMember.Setter = set_87_CallMethodAction_MethodName;
+                xamlMember.Getter = get_96_CallMethodAction_MethodName;
+                xamlMember.Setter = set_96_CallMethodAction_MethodName;
                 break;
             case "Microsoft.Xaml.Interactions.Core.CallMethodAction.TargetObject":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Microsoft.Xaml.Interactions.Core.CallMethodAction");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "TargetObject", "Object");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_88_CallMethodAction_TargetObject;
-                xamlMember.Setter = set_88_CallMethodAction_TargetObject;
-                break;
-            case "Esame.ViewModels.SettingsPageViewModel.SettingsPartViewModel":
-                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.SettingsPageViewModel");
-                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "SettingsPartViewModel", "Esame.ViewModels.SettingsPartViewModel");
-                xamlMember.Getter = get_89_SettingsPageViewModel_SettingsPartViewModel;
-                xamlMember.SetIsReadOnly();
-                break;
-            case "Esame.ViewModels.SettingsPageViewModel.AboutPartViewModel":
-                userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Esame.ViewModels.SettingsPageViewModel");
-                xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "AboutPartViewModel", "Esame.ViewModels.AboutPartViewModel");
-                xamlMember.Getter = get_90_SettingsPageViewModel_AboutPartViewModel;
-                xamlMember.SetIsReadOnly();
+                xamlMember.Getter = get_97_CallMethodAction_TargetObject;
+                xamlMember.Setter = set_97_CallMethodAction_TargetObject;
                 break;
             case "Template10.Behaviors.TimeoutAction.Actions":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.TimeoutAction");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Actions", "Microsoft.Xaml.Interactivity.ActionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_91_TimeoutAction_Actions;
+                xamlMember.Getter = get_98_TimeoutAction_Actions;
                 xamlMember.SetIsReadOnly();
                 break;
             case "Template10.Behaviors.TimeoutAction.Milliseconds":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Behaviors.TimeoutAction");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "Milliseconds", "Int32");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_92_TimeoutAction_Milliseconds;
-                xamlMember.Setter = set_92_TimeoutAction_Milliseconds;
+                xamlMember.Getter = get_99_TimeoutAction_Milliseconds;
+                xamlMember.Setter = set_99_TimeoutAction_Milliseconds;
                 break;
             case "Template10.Controls.ModalDialog.CanBackButtonDismiss":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.ModalDialog");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "CanBackButtonDismiss", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_93_ModalDialog_CanBackButtonDismiss;
-                xamlMember.Setter = set_93_ModalDialog_CanBackButtonDismiss;
+                xamlMember.Getter = get_100_ModalDialog_CanBackButtonDismiss;
+                xamlMember.Setter = set_100_ModalDialog_CanBackButtonDismiss;
                 break;
             case "Template10.Controls.ModalDialog.DisableBackButtonWhenModal":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.ModalDialog");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "DisableBackButtonWhenModal", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_94_ModalDialog_DisableBackButtonWhenModal;
-                xamlMember.Setter = set_94_ModalDialog_DisableBackButtonWhenModal;
+                xamlMember.Getter = get_101_ModalDialog_DisableBackButtonWhenModal;
+                xamlMember.Setter = set_101_ModalDialog_DisableBackButtonWhenModal;
                 break;
             case "Template10.Controls.ModalDialog.ModalContent":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.ModalDialog");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "ModalContent", "Windows.UI.Xaml.UIElement");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_95_ModalDialog_ModalContent;
-                xamlMember.Setter = set_95_ModalDialog_ModalContent;
+                xamlMember.Getter = get_102_ModalDialog_ModalContent;
+                xamlMember.Setter = set_102_ModalDialog_ModalContent;
                 break;
             case "Template10.Controls.ModalDialog.IsModal":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.ModalDialog");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "IsModal", "Boolean");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_96_ModalDialog_IsModal;
-                xamlMember.Setter = set_96_ModalDialog_IsModal;
+                xamlMember.Getter = get_103_ModalDialog_IsModal;
+                xamlMember.Setter = set_103_ModalDialog_IsModal;
                 break;
             case "Template10.Controls.ModalDialog.ModalBackground":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.ModalDialog");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "ModalBackground", "Windows.UI.Xaml.Media.Brush");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_97_ModalDialog_ModalBackground;
-                xamlMember.Setter = set_97_ModalDialog_ModalBackground;
+                xamlMember.Getter = get_104_ModalDialog_ModalBackground;
+                xamlMember.Setter = set_104_ModalDialog_ModalBackground;
                 break;
             case "Template10.Controls.ModalDialog.ModalTransitions":
                 userType = (global::Esame.Esame_XamlTypeInfo.XamlUserType)GetXamlTypeByName("Template10.Controls.ModalDialog");
                 xamlMember = new global::Esame.Esame_XamlTypeInfo.XamlMember(this, "ModalTransitions", "Windows.UI.Xaml.Media.Animation.TransitionCollection");
                 xamlMember.SetIsDependencyProperty();
-                xamlMember.Getter = get_98_ModalDialog_ModalTransitions;
-                xamlMember.Setter = set_98_ModalDialog_ModalTransitions;
+                xamlMember.Getter = get_105_ModalDialog_ModalTransitions;
+                xamlMember.Setter = set_105_ModalDialog_ModalTransitions;
                 break;
             }
             return xamlMember;

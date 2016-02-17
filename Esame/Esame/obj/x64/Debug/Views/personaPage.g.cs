@@ -220,7 +220,6 @@ namespace Esame.Views
             }
             private void Update_personaView_Gruppo(global::Esame.ViewModels.gruppoDetail obj, int phase)
             {
-                this.bindingsTracking.UpdateChildListeners_personaView_Gruppo(obj);
                 if (obj != null)
                 {
                     if ((phase & (NOT_PHASED | DATA_CHANGED | (1 << 0))) != 0)
@@ -310,7 +309,6 @@ namespace Esame.Views
                 public void ReleaseAllListeners()
                 {
                     UpdateChildListeners_personaView(null);
-                    UpdateChildListeners_personaView_Gruppo(null);
                 }
 
                 public void PropertyChanged_personaView(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
@@ -423,63 +421,6 @@ namespace Esame.Views
                         {
                             cache_personaView = obj;
                             ((global::System.ComponentModel.INotifyPropertyChanged)obj).PropertyChanged += PropertyChanged_personaView;
-                        }
-                    }
-                }
-                public void PropertyChanged_personaView_Gruppo(object sender, global::System.ComponentModel.PropertyChangedEventArgs e)
-                {
-                    personaPage_obj1_Bindings bindings;
-                    if(WeakRefToBindingObj.TryGetTarget(out bindings))
-                    {
-                        string propName = e.PropertyName;
-                        global::Esame.ViewModels.gruppoDetail obj = sender as global::Esame.ViewModels.gruppoDetail;
-                        if (global::System.String.IsNullOrEmpty(propName))
-                        {
-                            if (obj != null)
-                            {
-                                    bindings.Update_personaView_Gruppo_Nome(obj.Nome, DATA_CHANGED);
-                            }
-                            else
-                            {
-                                bindings.UpdateFallback_personaView_Gruppo_Nome(DATA_CHANGED);
-                            }
-                        }
-                        else
-                        {
-                            switch (propName)
-                            {
-                                case "Nome":
-                                {
-                                    if (obj != null)
-                                    {
-                                        bindings.Update_personaView_Gruppo_Nome(obj.Nome, DATA_CHANGED);
-                                    }
-                                    else
-                                    {
-                                    bindings.UpdateFallback_personaView_Gruppo_Nome(DATA_CHANGED);
-                                    }
-                                    break;
-                                }
-                                default:
-                                    break;
-                            }
-                        }
-                    }
-                }
-                private global::Esame.ViewModels.gruppoDetail cache_personaView_Gruppo = null;
-                public void UpdateChildListeners_personaView_Gruppo(global::Esame.ViewModels.gruppoDetail obj)
-                {
-                    if (obj != cache_personaView_Gruppo)
-                    {
-                        if (cache_personaView_Gruppo != null)
-                        {
-                            ((global::System.ComponentModel.INotifyPropertyChanged)cache_personaView_Gruppo).PropertyChanged -= PropertyChanged_personaView_Gruppo;
-                            cache_personaView_Gruppo = null;
-                        }
-                        if (obj != null)
-                        {
-                            cache_personaView_Gruppo = obj;
-                            ((global::System.ComponentModel.INotifyPropertyChanged)obj).PropertyChanged += PropertyChanged_personaView_Gruppo;
                         }
                     }
                 }

@@ -236,3 +236,8 @@ C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\personaPa
 C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\Views\personaPage.xbf
 C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\personaPage.g.i.cs
 C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\personaPage.g.cs
+C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\GruppoDetailControl.g.i.cs
+C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\GruppoDetailControl.g.cs
+C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\GruppoDetailControl.xaml
+C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\GruppoDetailControl.xbf
+C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\Views\GruppoDetailControl.xbf

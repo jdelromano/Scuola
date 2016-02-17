@@ -2,7 +2,10 @@
 <Roots >
   <Roots.PropertyPathNames>
     <RootPropertyPathName Name="Nome" />
-    <RootPropertyPathName Name="Value" />
+    <RootPropertyPathName Name="gruppiList" />
+    <RootPropertyPathName Name="SelectedGruppo" />
+    <RootPropertyPathName Name="Responsabile" />
+    <RootPropertyPathName Name="textPerTitolo" />
     <RootPropertyPathName Name="AboutPartViewModel" />
     <RootPropertyPathName Name="Version" />
     <RootPropertyPathName Name="Publisher" />
@@ -61,7 +64,6 @@
     <RootType FullName="Template10.Controls.Resizer">
       <RootProperty Name="GrabberBrush" />
       <RootProperty Name="GrabberVisibility" />
-      <RootProperty Name="ElementControl" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
@@ -85,7 +87,6 @@
       <RootProperty Name="RowDefinitions" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Width" />
-      <RootProperty Name="Height" />
       <RootProperty Name="DataContext" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
@@ -110,10 +111,10 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Text" />
-      <RootProperty Name="Style" />
-      <RootProperty Name="Height" />
-      <RootProperty Name="FontSize" />
       <RootProperty Name="Inlines" />
+      <RootProperty Name="Style" />
+      <RootProperty Name="FontWeight" />
+      <RootProperty Name="FontSize" />
       <RootProperty Name="LineHeight" />
       <RootProperty Name="TextWrapping" />
     </RootType>
@@ -122,6 +123,30 @@
       <RootProperty Name="FallbackValue" />
     </RootType>
     <RootType FullName="Esame.Views.Busy" />
+    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
+      <RootProperty Name="DataContext" />
+      <RootProperty Name="Children" />
+      <RootProperty Name="VerticalAlignment" />
+      <RootProperty Name="Orientation" />
+      <RootProperty Name="Padding" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Background" />
+    </RootType>
+    <RootType FullName="Esame.ViewModels.gruppoDetailViewModel" />
+    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
+      <RootProperty Name="Text" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="Margin" />
+      <RootProperty Name="HorizontalAlignment" />
+      <RootProperty Name="Header" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
+      <RootProperty Name="UpdateSourceTrigger" />
+      <RootProperty Name="ElementName" />
+    </RootType>
+    <RootType FullName="Esame.Views.GruppoDetailControl" />
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="DataContext" />
       <RootProperty Name="Content" />
@@ -155,13 +180,6 @@
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalContentAlignment" />
     </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="Children" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Orientation" />
-      <RootProperty Name="Padding" />
-      <RootProperty Name="Background" />
-    </RootType>
     <RootType FullName="Template10.Behaviors.EllipsisBehavior">
       <RootProperty Name="Visibility" />
     </RootType>
@@ -170,45 +188,14 @@
     <RootType FullName="Esame.Views.DetailPage" />
     <RootType FullName="Esame.ViewModels.MainPageViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="Height" />
+      <RootProperty Name="Width" />
+      <RootProperty Name="MinWidth" />
       <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedItem" />
       <RootProperty Name="ItemTemplate" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Content" />
-      <RootEvent Name="Click" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Mode" />
-      <RootProperty Name="UpdateSourceTrigger" />
-      <RootProperty Name="ElementName" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
-      <RootProperty Name="Width" />
-      <RootProperty Name="MinWidth" />
-      <RootProperty Name="MinHeight" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Header" />
-      <RootProperty Name="Text" />
-      <RootProperty Name="TextWrapping" />
-      <RootProperty Name="HorizontalAlignment" />
-    </RootType>
-    <RootType FullName="Template10.Behaviors.TextBoxEnterKeyBehavior">
-      <RootProperty Name="Actions" />
-    </RootType>
-    <RootType FullName="Microsoft.Xaml.Interactions.Core.EventTriggerBehavior">
-      <RootProperty Name="Actions" />
-      <RootProperty Name="EventName" />
-    </RootType>
-    <RootType FullName="Template10.Behaviors.FocusAction" />
-    <RootType FullName="Microsoft.Xaml.Interactions.Core.CallMethodAction">
-      <RootProperty Name="MethodName" />
-      <RootProperty Name="TargetObject" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Label" />
@@ -261,6 +248,18 @@
       <RootProperty Name="IsOn" />
       <RootProperty Name="OffContent" />
       <RootProperty Name="OnContent" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Margin" />
+      <RootProperty Name="Content" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Interactions.Core.EventTriggerBehavior">
+      <RootProperty Name="EventName" />
+      <RootProperty Name="Actions" />
+    </RootType>
+    <RootType FullName="Microsoft.Xaml.Interactions.Core.CallMethodAction">
+      <RootProperty Name="MethodName" />
+      <RootProperty Name="TargetObject" />
     </RootType>
     <RootType FullName="Template10.Behaviors.TimeoutAction">
       <RootProperty Name="Milliseconds" />

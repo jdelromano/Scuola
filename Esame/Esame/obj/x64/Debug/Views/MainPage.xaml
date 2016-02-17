@@ -53,50 +53,46 @@
         <!--  page header  -->
         <controls:PageHeader Content="Main Page">
             <controls:PageHeader.SecondaryCommands>
-                <AppBarButton x:ConnectionId='9'                                         Label="Settings" />
-                <AppBarButton x:ConnectionId='10'                                        Label="Privacy" />
-                <AppBarButton x:ConnectionId='11'                                      Label="About" />
+                <AppBarButton x:ConnectionId='8'                                         Label="Settings" />
+                <AppBarButton x:ConnectionId='9'                                        Label="Privacy" />
+                <AppBarButton x:ConnectionId='10'                                      Label="About" />
             </controls:PageHeader.SecondaryCommands>
         </controls:PageHeader>
 
         <!--  page content  -->
-        <StackPanel Grid.Row="1" VerticalAlignment="Top" Orientation="Horizontal"
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Top" Orientation="Vertical"
                     Padding="12,8,0,0">
 
-            <controls:Resizer>
-                <TextBox Width="200" MinWidth="200" MinHeight="60"
-                         Margin="0" Header="Parameter to pass"
-                         Text="{Binding Value, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
-                         TextWrapping="Wrap">
-                    <Interactivity:Interaction.Behaviors>
-                        <Behaviors:TextBoxEnterKeyBehavior>
-                            <Core:CallMethodAction MethodName="GotoDetailsPage" TargetObject="{Binding}" />
-                        </Behaviors:TextBoxEnterKeyBehavior>
-                        <Core:EventTriggerBehavior>
-                            <Behaviors:FocusAction />
-                        </Core:EventTriggerBehavior>
-                    </Interactivity:Interaction.Behaviors>
-                </TextBox>
-            </controls:Resizer>
 
-            <ListView x:ConnectionId='7' x:Name="resultList" Height="400" ItemsSource="{Binding}"  >
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <Grid HorizontalAlignment="Left" Width="250" Height="100">
-                            <StackPanel>
-                                <StackPanel VerticalAlignment="Top" Orientation="Horizontal" Background="{StaticResource ListViewItemOverlayBackgroundThemeBrush}">
-                                    <TextBlock Text="{Binding Nome}" Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}" Height="60" Margin="15,0,15,0"/>
+
+
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+
+                <ListView x:ConnectionId='7' Grid.Column="0" x:Name="resultList" 
+                		Width="200" MinWidth="200" ItemsSource="{Binding Path=gruppiList}" 
+                		SelectedItem="{Binding SelectedGruppo, Mode=TwoWay}" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid HorizontalAlignment="Left" Width="250">
+                                <StackPanel Margin="5, 5, 5, 5">
+                                    <StackPanel VerticalAlignment="Top" Orientation="Vertical" Background="{StaticResource ListViewItemOverlayBackgroundThemeBrush}">
+                                        <TextBlock FontWeight="Bold" Text="{Binding Nome, UpdateSourceTrigger=PropertyChanged}" Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}" Margin="5, 5, 5, 5" />
+                                        <TextBlock Text="{Binding Responsabile.textPerTitolo, UpdateSourceTrigger=PropertyChanged}"  Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}" Margin="15, 5, 5, 5"/>
+                                    </StackPanel>
                                 </StackPanel>
-                            </StackPanel>
-                        </Grid>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
 
+                <!--<local:GruppoDetailControl Grid.Column="1"  Gruppo="{Binding SelectedGruppo}"/>-->
 
-            <Button x:ConnectionId='8' Margin="12,0" VerticalAlignment="Bottom"
-                                           Content="Start" />
-
+            </Grid>
         </StackPanel>
 
     </Grid>

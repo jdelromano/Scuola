@@ -101,8 +101,11 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\data.cs" />
     <Compile Include="Services\SettingsServices\ISettingsService.cs" />
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
+    <Compile Include="ViewModels\Class1.cs" />
+    <Compile Include="ViewModels\gruppoDetailViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\DetailPageViewModel.cs" />
     <Compile Include="ViewModels\gruppo.cs" />
@@ -110,6 +113,9 @@
     <Compile Include="ViewModels\SettingsPageViewModel.cs" />
     <Compile Include="Views\Busy.xaml.cs">
       <DependentUpon>Busy.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\GruppoDetailControl.xaml.cs">
+      <DependentUpon>GruppoDetailControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\personaPage.xaml.cs">
       <DependentUpon>personaPage.xaml</DependentUpon>
@@ -162,6 +168,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Views\GruppoDetailControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\personaPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -190,6 +200,11 @@
   <ItemGroup>
     <Folder Include="Converters\" />
     <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <SDKReference Include="SQLite.UAP.2015, Version=3.10.2">
+      <Name>SQLite for Universal App Platform</Name>
+    </SDKReference>
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

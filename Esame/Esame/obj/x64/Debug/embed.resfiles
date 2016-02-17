@@ -2,6 +2,7 @@ App.xbf
 Styles\Custom.xbf
 Views\Busy.xbf
 Views\DetailPage.xbf
+Views\GruppoDetailControl.xbf
 Views\MainPage.xbf
 Views\personaPage.xbf
 Views\SettingsPage.xbf

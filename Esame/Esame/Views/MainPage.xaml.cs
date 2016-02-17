@@ -11,13 +11,7 @@ namespace Esame.Views
         {
             InitializeComponent();
             NavigationCacheMode = NavigationCacheMode.Enabled;
-        }
-        
-        private void btnStart_click(object sender, RoutedEventArgs e)
-        {
-            var res = gruppoDetail.generateGroupList();
-
-            this.DataContext = res;
+            
         }
     }
 }
