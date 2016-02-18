@@ -101,24 +101,20 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Services\data.cs" />
+    <Compile Include="Models\data.cs" />
+    <Compile Include="Services\dataMockService.cs" />
+    <Compile Include="Services\Services.cs" />
     <Compile Include="Services\SettingsServices\ISettingsService.cs" />
     <Compile Include="Services\SettingsServices\SettingsService.cs" />
-    <Compile Include="ViewModels\Class1.cs" />
-    <Compile Include="ViewModels\gruppoDetailViewModel.cs" />
+    <Compile Include="ViewModels\GruppoViewModel.cs" />
     <Compile Include="ViewModels\MainPageViewModel.cs" />
     <Compile Include="ViewModels\DetailPageViewModel.cs" />
-    <Compile Include="ViewModels\gruppo.cs" />
-    <Compile Include="ViewModels\persona.cs" />
     <Compile Include="ViewModels\SettingsPageViewModel.cs" />
     <Compile Include="Views\Busy.xaml.cs">
       <DependentUpon>Busy.xaml</DependentUpon>
     </Compile>
-    <Compile Include="Views\GruppoDetailControl.xaml.cs">
-      <DependentUpon>GruppoDetailControl.xaml</DependentUpon>
-    </Compile>
-    <Compile Include="Views\personaPage.xaml.cs">
-      <DependentUpon>personaPage.xaml</DependentUpon>
+    <Compile Include="Views\GruppoControl.xaml.cs">
+      <DependentUpon>GruppoControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\DetailPage.xaml.cs">
       <DependentUpon>DetailPage.xaml</DependentUpon>
@@ -168,13 +164,9 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Page Include="Views\GruppoDetailControl.xaml">
+    <Page Include="Views\GruppoControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="Views\personaPage.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\DetailPage.xaml">
       <SubType>Designer</SubType>
@@ -199,7 +191,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Converters\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="SQLite.UAP.2015, Version=3.10.2">

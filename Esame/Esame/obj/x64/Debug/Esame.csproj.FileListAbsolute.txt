@@ -125,7 +125,6 @@ C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\System.Xml.XDoc
 C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\System.Xml.XmlDocument.dll
 C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\System.Xml.XmlSerializer.dll
 C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\Template10Library.dll
-C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Esame.csprojResolveAssemblyReference.cache
 C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\App.g.i.cs
 C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\App.g.cs
 C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\Busy.g.i.cs
@@ -231,13 +230,8 @@ C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Template10Libra
 C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\ProjectArchitectures.txt
 C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\WindowsStateTriggers.dll
 C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\WindowsStateTriggers.pri.xml
-C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\personaPage.xaml
-C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\personaPage.xbf
-C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\Views\personaPage.xbf
-C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\personaPage.g.i.cs
-C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\personaPage.g.cs
-C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\GruppoDetailControl.g.i.cs
-C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\GruppoDetailControl.g.cs
-C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\GruppoDetailControl.xaml
-C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\GruppoDetailControl.xbf
-C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\Views\GruppoDetailControl.xbf
+C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\GruppoControl.g.i.cs
+C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\GruppoControl.g.cs
+C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\GruppoControl.xaml
+C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\GruppoControl.xbf
+C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\Views\GruppoControl.xbf

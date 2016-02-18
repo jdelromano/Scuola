@@ -19,6 +19,9 @@ namespace Esame
             InitializeComponent();
             SplashFactory = (e) => new Views.Splash(e);
 
+
+            Services.DataServices.DefaultService = new Esame.Services.mockServices();
+
             #region App settings
 
             var _settings = SettingsService.Instance;

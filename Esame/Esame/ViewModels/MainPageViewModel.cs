@@ -5,27 +5,81 @@ using System.Threading.Tasks;
 using Template10.Services.NavigationService;
 using Windows.UI.Xaml.Navigation;
 using System.Collections.ObjectModel;
+using Esame.Models;
+using Windows.UI.Xaml;
 
 namespace Esame.ViewModels
 {
     public class MainPageViewModel : ViewModelBase
     {
+        public DelegateCommand<TipoGruppo> DeleteItemCommand
+        {
+            get; set;
+        }
+
         public MainPageViewModel()
         {
             if (Windows.ApplicationModel.DesignMode.DesignModeEnabled)
             {
-                Value = "Designtime value";
+            }
+
+            DeleteItemCommand = new DelegateCommand<TipoGruppo>
+            (
+                gruppo => { DeleteItem(gruppo); }, //Execute
+                gruppo => { return gruppo != null; } //CanExecute
+            );
+        }
+
+
+        private ObservableCollection<TipoGruppo> _GruppoList;
+        public ObservableCollection<TipoGruppo> GruppoList
+        {
+            get
+            {
+                if (_GruppoList == null)
+                    _GruppoList = new ObservableCollection<TipoGruppo>(Services.DataServices.DefaultService.getGruppi());
+                return _GruppoList;
             }
         }
 
-        string _Value = string.Empty;
-        public string Value { get { return _Value; } set { Set(ref _Value, value); } }
+
+        TipoGruppo m_SelectedGruppo;
+        public TipoGruppo SelectedGruppo
+        {
+            get
+            {
+                return m_SelectedGruppo;
+            }
+            set
+            {
+                m_SelectedGruppo = value;
+                RaisePropertyChanged();
+                RaisePropertyChanged("GruppoControlVisibility");
+            }
+        }
+
+        public Visibility GruppoControlVisibility
+        {
+            get
+            {
+                if (SelectedGruppo != null)
+                    return Visibility.Visible;
+                else
+                    return Visibility.Collapsed;
+            }
+        }
+
+        public void DeleteItem(TipoGruppo g)
+        {
+            Services.DataServices.DefaultService.Delete(g);
+            _GruppoList.Remove(g);
+        }
 
         public override Task OnNavigatedToAsync(object parameter, NavigationMode mode, IDictionary<string, object> state)
         {
             if (state.Any())
             {
-                Value = state[nameof(Value)]?.ToString();
+                //Value = state[nameof(Value)]?.ToString();
                 state.Clear();
             }
             return Task.CompletedTask;
@@ -35,7 +89,7 @@ namespace Esame.ViewModels
         {
             if (suspending)
             {
-                state[nameof(Value)] = Value;
+                //state[nameof(Value)] = Value;
             }
             return Task.CompletedTask;
         }
@@ -55,27 +109,6 @@ namespace Esame.ViewModels
         public void GotoAbout() =>
             NavigationService.Navigate(typeof(Views.SettingsPage), 2);
 
-
-        public ObservableCollection<gruppoDetail> gruppiList
-        {
-            get
-            {
-                return new ObservableCollection<gruppoDetail>(gruppoService.getList());
-            }
-        }
-
-
-        gruppoDetail m_selectedGruppo;
-        public gruppoDetail SelectedGruppo
-        {
-            get {
-                return m_selectedGruppo;
-            }
-            set {
-                m_selectedGruppo = value;
-                RaisePropertyChanged();
-            }
-        }
     }
 }
 

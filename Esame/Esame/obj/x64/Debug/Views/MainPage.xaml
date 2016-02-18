@@ -10,11 +10,15 @@
       xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
       xmlns:vm="using:Esame.ViewModels" mc:Ignorable="d">
 
-    <Page.DataContext>
-        <vm:MainPageViewModel x:ConnectionId='2' x:Name="ViewModel" />
-    </Page.DataContext>
+    <Page.Resources>
+        <local:Debug x:Key="debug" />
+    </Page.Resources>
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <Grid.DataContext>
+            <vm:MainPageViewModel x:ConnectionId='2' x:Name="ViewModel" />
+        </Grid.DataContext>
 
         <VisualStateManager.VisualStateGroups>
             <VisualStateGroup x:ConnectionId='3' x:Name="AdaptiveVisualStateGroup">
@@ -64,35 +68,29 @@
         <StackPanel Grid.Row="1" VerticalAlignment="Top" Orientation="Vertical"
                     Padding="12,8,0,0">
 
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <ListBox x:ConnectionId='7' x:Name="Lista" Grid.Column="0" ItemsSource="{Binding Path=GruppoList}" 
+                         SelectedItem="{Binding SelectedGruppo, Mode=TwoWay}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel>
+                            <TextBlock Text="{Binding Nome}" />
+                            <TextBlock Text="{Binding Responsabile}" />
+                            <Button Content="Delete" Command="{Binding ElementName=ThisPage, Path=ViewModel2.DeleteItemCommand}" 
+                                        CommandParameter="{Binding}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
 
 
-
-            <Grid>
-                <Grid.ColumnDefinitions>
-                    <ColumnDefinition/>
-                    <ColumnDefinition/>
-                </Grid.ColumnDefinitions>
-
-                <ListView x:ConnectionId='7' Grid.Column="0" x:Name="resultList" 
-                		Width="200" MinWidth="200" ItemsSource="{Binding Path=gruppiList}" 
-                		SelectedItem="{Binding SelectedGruppo, Mode=TwoWay}" >
-                    <ListView.ItemTemplate>
-                        <DataTemplate>
-                            <Grid HorizontalAlignment="Left" Width="250">
-                                <StackPanel Margin="5, 5, 5, 5">
-                                    <StackPanel VerticalAlignment="Top" Orientation="Vertical" Background="{StaticResource ListViewItemOverlayBackgroundThemeBrush}">
-                                        <TextBlock FontWeight="Bold" Text="{Binding Nome, UpdateSourceTrigger=PropertyChanged}" Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}" Margin="5, 5, 5, 5" />
-                                        <TextBlock Text="{Binding Responsabile.textPerTitolo, UpdateSourceTrigger=PropertyChanged}"  Foreground="{StaticResource ListViewItemOverlayForegroundThemeBrush}" Margin="15, 5, 5, 5"/>
-                                    </StackPanel>
-                                </StackPanel>
-                            </Grid>
-                        </DataTemplate>
-                    </ListView.ItemTemplate>
-                </ListView>
-
-                <!--<local:GruppoDetailControl Grid.Column="1"  Gruppo="{Binding SelectedGruppo}"/>-->
-
-            </Grid>
+            <local:GruppoControl Gruppo="{Binding SelectedGruppo}" Grid.Column="1" Visibility="{Binding GruppoControlVisibility}" />
+        </Grid>
         </StackPanel>
 
     </Grid>

@@ -10,7 +10,7 @@
     <PackageArchitecture>x64</PackageArchitecture>
     <PackageIdentityName>33666f9b-f72c-4e94-a39a-68f94eff34c7</PackageIdentityName>
     <IntermediateOutputPath>C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\</IntermediateOutputPath>
-    <RegisteredManifestChecksum>4CB44878DC90DAE8EDA7DBAEF6697C89A6898923768FBEC29A3F138F9FC21D06</RegisteredManifestChecksum>
+    <RegisteredManifestChecksum>73D11483C431A9F3669BCF48CEA32E361929C5D3A4EDB928D5608FE1907B2220</RegisteredManifestChecksum>
     <RegisteredPackageMoniker>33666f9b-f72c-4e94-a39a-68f94eff34c7_1.0.0.0_x64__d5fdcz9ys33wj</RegisteredPackageMoniker>
     <RegisteredUserModeAppID>33666f9b-f72c-4e94-a39a-68f94eff34c7_d5fdcz9ys33wj!App</RegisteredUserModeAppID>
     <RegisteredPackageID>33666f9b-f72c-4e94-a39a-68f94eff34c7</RegisteredPackageID>
@@ -22,25 +22,25 @@
     <AppXManifest Include="C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2016-02-15T20:03:22.534</Modified>
+      <Modified>2016-02-18T15:28:04.926</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\Esame.exe">
       <PackagePath>entrypoint\Esame.exe</PackagePath>
-      <Modified>2016-02-15T20:03:21.374</Modified>
+      <Modified>2016-02-18T15:28:03.770</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\José\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
+    <AppxPackagedFile Include="C:\Users\José\.nuget\packages\Microsoft.ApplicationInsights\1.2.3\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
-      <Modified>2016-01-13T16:46:49.123</Modified>
+      <Modified>2016-01-25T17:37:55.246</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\José\.nuget\packages\Microsoft.ApplicationInsights.PersistenceChannel\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.PersistenceChannel.dll">
+    <AppxPackagedFile Include="C:\Users\José\.nuget\packages\Microsoft.ApplicationInsights.PersistenceChannel\1.2.3\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.PersistenceChannel.dll">
       <PackagePath>Microsoft.ApplicationInsights.PersistenceChannel.dll</PackagePath>
-      <Modified>2016-01-13T16:46:49.455</Modified>
+      <Modified>2016-02-15T16:53:14.240</Modified>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\José\.nuget\packages\Microsoft.ApplicationInsights.WindowsApps\1.0.0\lib\win81\Microsoft.ApplicationInsights.Extensibility.Windows.dll">
+    <AppxPackagedFile Include="C:\Users\José\.nuget\packages\Microsoft.ApplicationInsights.WindowsApps\1.1.1\lib\win81\Microsoft.ApplicationInsights.Extensibility.Windows.dll">
       <PackagePath>Microsoft.ApplicationInsights.Extensibility.Windows.dll</PackagePath>
-      <Modified>2016-01-13T16:46:49.593</Modified>
+      <Modified>2016-02-15T16:53:14.110</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\José\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -474,6 +474,10 @@
       <PackagePath>WindowsStateTriggers.dll</PackagePath>
       <Modified>2016-02-15T14:10:47.579</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UAP\v0.8.0.0\ExtensionSDKs\SQLite.UAP.2015\3.10.2\Redist\Debug\x64\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
+      <Modified>2016-01-25T16:41:56.917</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>
       <Modified>2016-02-04T15:07:27.930</Modified>
@@ -522,7 +526,7 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\Esame.xr.xml">
       <PackagePath>Esame.xr.xml</PackagePath>
-      <Modified>2016-02-15T20:03:21.012</Modified>
+      <Modified>2016-02-18T15:28:03.400</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -562,11 +566,11 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
-      <Modified>2016-02-15T20:03:22.207</Modified>
+      <Modified>2016-02-18T15:28:04.619</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\Core\Esame.exe">
       <PackagePath>Esame.exe</PackagePath>
-      <Modified>2016-02-15T20:03:22.532</Modified>
+      <Modified>2016-02-18T15:28:04.923</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

@@ -21,13 +21,13 @@
     <AppxPackagedFile Include="C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\Esame.exe">
       <PackagePath>entrypoint\Esame.exe</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\José\.nuget\packages\Microsoft.ApplicationInsights\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
+    <AppxPackagedFile Include="C:\Users\José\.nuget\packages\Microsoft.ApplicationInsights\1.2.3\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.dll">
       <PackagePath>Microsoft.ApplicationInsights.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\José\.nuget\packages\Microsoft.ApplicationInsights.PersistenceChannel\1.0.0\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.PersistenceChannel.dll">
+    <AppxPackagedFile Include="C:\Users\José\.nuget\packages\Microsoft.ApplicationInsights.PersistenceChannel\1.2.3\lib\portable-win81+wpa81\Microsoft.ApplicationInsights.PersistenceChannel.dll">
       <PackagePath>Microsoft.ApplicationInsights.PersistenceChannel.dll</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\José\.nuget\packages\Microsoft.ApplicationInsights.WindowsApps\1.0.0\lib\win81\Microsoft.ApplicationInsights.Extensibility.Windows.dll">
+    <AppxPackagedFile Include="C:\Users\José\.nuget\packages\Microsoft.ApplicationInsights.WindowsApps\1.1.1\lib\win81\Microsoft.ApplicationInsights.Extensibility.Windows.dll">
       <PackagePath>Microsoft.ApplicationInsights.Extensibility.Windows.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\José\.nuget\packages\Microsoft.CSharp\4.0.0\lib\netcore50\Microsoft.CSharp.dll">
@@ -353,6 +353,9 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\José\.nuget\packages\WindowsStateTriggers\1.1.0\lib\uap10.0\WindowsStateTriggers.dll">
       <PackagePath>WindowsStateTriggers.dll</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UAP\v0.8.0.0\ExtensionSDKs\SQLite.UAP.2015\3.10.2\Redist\Debug\x64\sqlite3.dll">
+      <PackagePath>sqlite3.dll</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\ApplicationInsights.config">
       <PackagePath>ApplicationInsights.config</PackagePath>

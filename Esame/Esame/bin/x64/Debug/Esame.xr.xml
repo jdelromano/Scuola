@@ -1,11 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Roots >
+  <Roots.Interfaces>
+    <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
+  </Roots.Interfaces>
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="Nome" />
-    <RootPropertyPathName Name="gruppiList" />
-    <RootPropertyPathName Name="SelectedGruppo" />
     <RootPropertyPathName Name="Responsabile" />
-    <RootPropertyPathName Name="textPerTitolo" />
+    <RootPropertyPathName Name="Nome" />
+    <RootPropertyPathName Name="SelectedGruppo" />
+    <RootPropertyPathName Name="GruppoControlVisibility" />
+    <RootPropertyPathName Name="GruppoList" />
+    <RootPropertyPathName Name="ViewModel2" />
+    <RootPropertyPathName Name="DeleteItemCommand" />
     <RootPropertyPathName Name="AboutPartViewModel" />
     <RootPropertyPathName Name="Version" />
     <RootPropertyPathName Name="Publisher" />
@@ -85,8 +90,6 @@
       <RootProperty Name="Children" />
       <RootProperty Name="Background" />
       <RootProperty Name="RowDefinitions" />
-      <RootProperty Name="HorizontalAlignment" />
-      <RootProperty Name="Width" />
       <RootProperty Name="DataContext" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
@@ -113,7 +116,6 @@
       <RootProperty Name="Text" />
       <RootProperty Name="Inlines" />
       <RootProperty Name="Style" />
-      <RootProperty Name="FontWeight" />
       <RootProperty Name="FontSize" />
       <RootProperty Name="LineHeight" />
       <RootProperty Name="TextWrapping" />
@@ -129,10 +131,8 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Orientation" />
       <RootProperty Name="Padding" />
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Background" />
     </RootType>
-    <RootType FullName="Esame.ViewModels.gruppoDetailViewModel" />
+    <RootType FullName="Esame.ViewModels.GruppoViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Text" />
       <RootProperty Name="Width" />
@@ -141,18 +141,22 @@
       <RootProperty Name="Header" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Path" />
       <RootProperty Name="Mode" />
       <RootProperty Name="UpdateSourceTrigger" />
+      <RootProperty Name="Path" />
       <RootProperty Name="ElementName" />
     </RootType>
-    <RootType FullName="Esame.Views.GruppoDetailControl" />
+    <RootType FullName="Esame.Views.GruppoControl">
+      <RootProperty Name="Gruppo" />
+      <RootProperty Name="Visibility" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Page">
       <RootProperty Name="DataContext" />
       <RootProperty Name="Content" />
+      <RootProperty Name="Resources" />
       <RootProperty Name="Background" />
     </RootType>
-    <RootType FullName="Esame.ViewModels.personaViewModel" />
+    <RootType FullName="Esame.ViewModels.DetailPageViewModel" />
     <RootType FullName="Windows.UI.Xaml.VisualStateManager">
       <RootMethod Name="GetVisualStateGroups" />
     </RootType>
@@ -183,19 +187,22 @@
     <RootType FullName="Template10.Behaviors.EllipsisBehavior">
       <RootProperty Name="Visibility" />
     </RootType>
-    <RootType FullName="Esame.Views.personaPage" />
-    <RootType FullName="Esame.ViewModels.DetailPageViewModel" />
     <RootType FullName="Esame.Views.DetailPage" />
+    <RootType FullName="Esame.Views.Debug" />
     <RootType FullName="Esame.ViewModels.MainPageViewModel" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ListView">
-      <RootProperty Name="Width" />
-      <RootProperty Name="MinWidth" />
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
       <RootProperty Name="ItemsSource" />
       <RootProperty Name="SelectedItem" />
       <RootProperty Name="ItemTemplate" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.DataTemplate">
       <RootProperty Name="Template" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.Button">
+      <RootProperty Name="Content" />
+      <RootProperty Name="Command" />
+      <RootProperty Name="CommandParameter" />
+      <RootProperty Name="Margin" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.AppBarButton">
       <RootProperty Name="Label" />
@@ -248,10 +255,6 @@
       <RootProperty Name="IsOn" />
       <RootProperty Name="OffContent" />
       <RootProperty Name="OnContent" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Controls.Button">
-      <RootProperty Name="Margin" />
-      <RootProperty Name="Content" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.Interactions.Core.EventTriggerBehavior">
       <RootProperty Name="EventName" />
