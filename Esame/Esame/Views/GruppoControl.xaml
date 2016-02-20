@@ -10,14 +10,38 @@
     d:DesignHeight="300"
     d:DesignWidth="400">
 
-    <StackPanel>
-        <StackPanel.DataContext>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.DataContext>
             <vm:GruppoViewModel x:Name="ViewModel" />
-        </StackPanel.DataContext>
+        </Grid.DataContext>
 
-        
-        <TextBox Text="{Binding Nome, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-        <TextBlock>-</TextBlock>
-        <TextBox Text="{Binding Responsabile, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-    </StackPanel>
+
+        <StackPanel Orientation="Vertical" Grid.Column="0" >
+            <StackPanel x:Name="GroupDetails" Orientation="Horizontal">
+                <TextBox x:Name="txtNome" Text="{Binding Nome, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                <TextBox x:Name="txtResponsabile" Text="{Binding Responsabile, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            </StackPanel>
+            <ListBox x:Name="ListaPersona" Grid.Column="0" 
+                     ItemsSource="{Binding Path=PersonePerGruppoList}" 
+                     SelectedItem="{Binding SelectedPersona, Mode=TwoWay}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Nome}" />
+                            <TextBlock Text="{Binding Cognome}" />
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+        <local:PersonaControl x:Name="PersonaDetail" Persona="{Binding SelectedPersona}"
+                              Grid.Column="1"
+                              Visibility="{Binding PersonaControlVisibility}"/>
+
+    </Grid>
+    
 </UserControl>

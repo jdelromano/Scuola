@@ -235,3 +235,9 @@ C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\GruppoCon
 C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\GruppoControl.xaml
 C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\GruppoControl.xbf
 C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\Views\GruppoControl.xbf
+C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\PersonaControl.g.i.cs
+C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\PersonaControl.g.cs
+C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\PersonaControl.xaml
+C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Views\PersonaControl.xbf
+C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\bin\x64\Debug\Views\PersonaControl.xbf
+C:\Users\José\Documents\GitHub\Scuola\Esame\Esame\obj\x64\Debug\Esame.csprojResolveAssemblyReference.cache

@@ -68,7 +68,7 @@ namespace Esame.ViewModels
                     return Visibility.Collapsed;
             }
         }
-
+        
         public void DeleteItem(TipoGruppo g)
         {
             Services.DataServices.DefaultService.Delete(g);

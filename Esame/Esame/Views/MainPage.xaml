@@ -27,6 +27,7 @@
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
+                        <Setter Target="viewGruppo.(PersonaDetail.Visibility)" Value="Collapsed"/>
                         <!--  TODO: change properties for narrow view  -->
                     </VisualState.Setters>
                 </VisualState>
@@ -35,6 +36,7 @@
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
+                        <Setter Target="viewGruppo.(PersonaDetail.Visibility)" Value="Visible"/>
                         <!--  TODO: change properties for normal view  -->
                     </VisualState.Setters>
                 </VisualState>
@@ -70,12 +72,13 @@
 
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition />
+                    <ColumnDefinition  MaxWidth="250"/>
                 <ColumnDefinition />
             </Grid.ColumnDefinitions>
 
-            <ListBox x:Name="Lista" Grid.Column="0" ItemsSource="{Binding Path=GruppoList}" 
-                         SelectedItem="{Binding SelectedGruppo, Mode=TwoWay}">
+                <ListBox x:Name="Lista" Grid.Column="0" 
+                     ItemsSource="{Binding Path=GruppoList}" 
+                     SelectedItem="{Binding SelectedGruppo, Mode=TwoWay}">
                 <ListBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel>
@@ -88,8 +91,10 @@
                 </ListBox.ItemTemplate>
             </ListBox>
 
-
-            <local:GruppoControl Gruppo="{Binding SelectedGruppo}" Grid.Column="1" Visibility="{Binding GruppoControlVisibility}" />
+            <local:GruppoControl x:Name="viewGruppo"
+                                 Gruppo="{Binding SelectedGruppo}" 
+                                 Grid.Column="1" 
+                                 Visibility="{Binding GruppoControlVisibility}" />
         </Grid>
         </StackPanel>
 

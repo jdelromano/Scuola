@@ -4,13 +4,19 @@
     <RootInterface FullName="Windows.UI.Xaml.Data.IValueConverter" />
   </Roots.Interfaces>
   <Roots.PropertyPathNames>
-    <RootPropertyPathName Name="Responsabile" />
+    <RootPropertyPathName Name="SelectedPersona" />
+    <RootPropertyPathName Name="PersonaControlVisibility" />
+    <RootPropertyPathName Name="PersonePerGruppoList" />
+    <RootPropertyPathName Name="Cognome" />
     <RootPropertyPathName Name="Nome" />
+    <RootPropertyPathName Name="Responsabile" />
     <RootPropertyPathName Name="SelectedGruppo" />
     <RootPropertyPathName Name="GruppoControlVisibility" />
     <RootPropertyPathName Name="GruppoList" />
     <RootPropertyPathName Name="ViewModel2" />
     <RootPropertyPathName Name="DeleteItemCommand" />
+    <RootPropertyPathName Name="Nascita" />
+    <RootPropertyPathName Name="Telefono" />
     <RootPropertyPathName Name="AboutPartViewModel" />
     <RootPropertyPathName Name="Version" />
     <RootPropertyPathName Name="Publisher" />
@@ -73,6 +79,7 @@
     <RootType FullName="Windows.UI.Xaml.Setter">
       <RootProperty Name="Property" />
       <RootProperty Name="Value" />
+      <RootProperty Name="Target" />
     </RootType>
     <RootType FullName="Microsoft.Xaml.DirectUI.ProxyTypes.ThemeResourceExtension" />
     <RootType FullName="Windows.UI.Xaml.Controls.UserControl">
@@ -88,9 +95,9 @@
     <RootType FullName="Windows.UI.Xaml.Controls.Grid">
       <RootProperty Name="ColumnDefinitions" />
       <RootProperty Name="Children" />
+      <RootProperty Name="DataContext" />
       <RootProperty Name="Background" />
       <RootProperty Name="RowDefinitions" />
-      <RootProperty Name="DataContext" />
       <RootMethod Name="GetColumn" />
       <RootMethod Name="SetColumn" />
       <RootMethod Name="GetRow" />
@@ -98,6 +105,7 @@
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ColumnDefinition">
       <RootProperty Name="Width" />
+      <RootProperty Name="MaxWidth" />
     </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.ProgressRing">
       <RootProperty Name="Width" />
@@ -114,9 +122,9 @@
       <RootProperty Name="VerticalAlignment" />
       <RootProperty Name="Foreground" />
       <RootProperty Name="Text" />
-      <RootProperty Name="Inlines" />
       <RootProperty Name="Style" />
       <RootProperty Name="FontSize" />
+      <RootProperty Name="Inlines" />
       <RootProperty Name="LineHeight" />
       <RootProperty Name="TextWrapping" />
     </RootType>
@@ -125,26 +133,38 @@
       <RootProperty Name="FallbackValue" />
     </RootType>
     <RootType FullName="Esame.Views.Busy" />
+    <RootType FullName="Esame.ViewModels.GruppoViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.StackPanel">
-      <RootProperty Name="DataContext" />
+      <RootProperty Name="Orientation" />
       <RootProperty Name="Children" />
       <RootProperty Name="VerticalAlignment" />
-      <RootProperty Name="Orientation" />
       <RootProperty Name="Padding" />
+      <RootProperty Name="DataContext" />
     </RootType>
-    <RootType FullName="Esame.ViewModels.GruppoViewModel" />
+    <RootType FullName="Esame.Views.PersonaControl">
+      <RootProperty Name="Persona" />
+      <RootProperty Name="Visibility" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Data.Binding">
+      <RootProperty Name="Path" />
+      <RootProperty Name="Mode" />
+      <RootProperty Name="UpdateSourceTrigger" />
+      <RootProperty Name="ElementName" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
+      <RootProperty Name="ItemsSource" />
+      <RootProperty Name="SelectedItem" />
+      <RootProperty Name="ItemTemplate" />
+    </RootType>
+    <RootType FullName="Windows.UI.Xaml.DataTemplate">
+      <RootProperty Name="Template" />
+    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.TextBox">
       <RootProperty Name="Text" />
       <RootProperty Name="Width" />
       <RootProperty Name="Margin" />
       <RootProperty Name="HorizontalAlignment" />
       <RootProperty Name="Header" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.Data.Binding">
-      <RootProperty Name="Mode" />
-      <RootProperty Name="UpdateSourceTrigger" />
-      <RootProperty Name="Path" />
-      <RootProperty Name="ElementName" />
     </RootType>
     <RootType FullName="Esame.Views.GruppoControl">
       <RootProperty Name="Gruppo" />
@@ -190,14 +210,6 @@
     <RootType FullName="Esame.Views.DetailPage" />
     <RootType FullName="Esame.Views.Debug" />
     <RootType FullName="Esame.ViewModels.MainPageViewModel" />
-    <RootType FullName="Windows.UI.Xaml.Controls.ListBox">
-      <RootProperty Name="ItemsSource" />
-      <RootProperty Name="SelectedItem" />
-      <RootProperty Name="ItemTemplate" />
-    </RootType>
-    <RootType FullName="Windows.UI.Xaml.DataTemplate">
-      <RootProperty Name="Template" />
-    </RootType>
     <RootType FullName="Windows.UI.Xaml.Controls.Button">
       <RootProperty Name="Content" />
       <RootProperty Name="Command" />
@@ -209,6 +221,7 @@
       <RootEvent Name="Click" />
     </RootType>
     <RootType FullName="Esame.Views.MainPage" />
+    <RootType FullName="Esame.ViewModels.PersonaViewModel" />
     <RootType FullName="Esame.ViewModels.SettingsPageViewModel" />
     <RootType FullName="Windows.UI.Xaml.Controls.Pivot">
       <RootProperty Name="Items" />
