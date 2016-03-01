@@ -19,13 +19,35 @@
             <vm:GruppoViewModel x:ConnectionId='1' x:Name="ViewModel" />
         </Grid.DataContext>
 
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:ConnectionId='2' x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:ConnectionId='3' x:Name="VisualStateNarrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="PersonaDetail.Visibility" Value="Collapsed"/>
+                        <!--  TODO: change properties for narrow view  -->
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:ConnectionId='4' x:Name="VisualStateNormal">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="700" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="PersonaDetail.Visibility" Value="Visible"/>
+                        <!--  TODO: change properties for normal view  -->
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
 
         <StackPanel Orientation="Vertical" Grid.Column="0" >
-            <StackPanel x:ConnectionId='3' x:Name="GroupDetails" Orientation="Horizontal">
-                <TextBox x:ConnectionId='5' x:Name="txtNome" Text="{Binding Nome, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
-                <TextBox x:ConnectionId='6' x:Name="txtResponsabile" Text="{Binding Responsabile, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+            <StackPanel x:ConnectionId='6' x:Name="GroupDetails" Orientation="Horizontal">
+                <TextBox x:ConnectionId='8' x:Name="txtNome" Text="{Binding Nome, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
+                <TextBox x:ConnectionId='9' x:Name="txtResponsabile" Text="{Binding Responsabile, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" />
             </StackPanel>
-            <ListBox x:ConnectionId='4' x:Name="ListaPersona" Grid.Column="0" 
+            <ListBox x:ConnectionId='7' x:Name="ListaPersona" Grid.Column="0" 
                      ItemsSource="{Binding Path=PersonePerGruppoList}" 
                      SelectedItem="{Binding SelectedPersona, Mode=TwoWay}">
                 <ListBox.ItemTemplate>
@@ -38,9 +60,9 @@
                 </ListBox.ItemTemplate>
             </ListBox>
         </StackPanel>
-        <local:PersonaControl x:ConnectionId='2' x:Name="PersonaDetail" Persona="{Binding SelectedPersona}"
-                              Grid.Column="1"
-                              Visibility="{Binding PersonaControlVisibility}"/>
+        <local:PersonaControl x:ConnectionId='5' x:Name="PersonaDetail" Persona="{Binding SelectedPersona}"
+                              Grid.Column="1" />
+        <!--Visibility="{Binding PersonaControlVisibility}"/>-->
 
     </Grid>
     

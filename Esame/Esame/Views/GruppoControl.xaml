@@ -19,6 +19,28 @@
             <vm:GruppoViewModel x:Name="ViewModel" />
         </Grid.DataContext>
 
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="AdaptiveVisualStateGroup">
+                <VisualState x:Name="VisualStateNarrow">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="PersonaDetail.Visibility" Value="Collapsed"/>
+                        <!--  TODO: change properties for narrow view  -->
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="VisualStateNormal">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowWidth="700" />
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="PersonaDetail.Visibility" Value="Visible"/>
+                        <!--  TODO: change properties for normal view  -->
+                    </VisualState.Setters>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
 
         <StackPanel Orientation="Vertical" Grid.Column="0" >
             <StackPanel x:Name="GroupDetails" Orientation="Horizontal">
@@ -39,8 +61,8 @@
             </ListBox>
         </StackPanel>
         <local:PersonaControl x:Name="PersonaDetail" Persona="{Binding SelectedPersona}"
-                              Grid.Column="1"
-                              Visibility="{Binding PersonaControlVisibility}"/>
+                              Grid.Column="1" />
+        <!--Visibility="{Binding PersonaControlVisibility}"/>-->
 
     </Grid>
     

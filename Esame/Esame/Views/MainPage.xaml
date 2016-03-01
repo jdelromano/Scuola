@@ -27,7 +27,6 @@
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NarrowMinWidth}" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="viewGruppo.(PersonaDetail.Visibility)" Value="Collapsed"/>
                         <!--  TODO: change properties for narrow view  -->
                     </VisualState.Setters>
                 </VisualState>
@@ -36,7 +35,6 @@
                         <AdaptiveTrigger MinWindowWidth="{StaticResource NormalMinWidth}" />
                     </VisualState.StateTriggers>
                     <VisualState.Setters>
-                        <Setter Target="viewGruppo.(PersonaDetail.Visibility)" Value="Visible"/>
                         <!--  TODO: change properties for normal view  -->
                     </VisualState.Setters>
                 </VisualState>
